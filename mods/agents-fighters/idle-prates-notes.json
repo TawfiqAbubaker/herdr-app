@@ -1,0 +1,10 @@
+{
+  "description": "Carlos Prates reclining with his hand behind his head, looking upward, wearing UFC clothes and holding a cigarette. Smoke is a separate native animation.",
+  "original_generated_file": "/Users/tawfiqabubaker/.codex/generated_images/01a1d039-47fa-7d40-b49f-6b48266b2c25/exec-3c08ea73-fa8e-4857-a593-b80939f28a17.png",
+  "smoke": "24 native text frames at 120ms plus a 2880ms opacity loop; no JS animation timer",
+  "revision_prompt": "Edit ONLY the head pose and gaze of this reclining pixel-art Carlos Prates. He is lying down relaxing with one hand behind his head. Tilt his head BACK so his face and nose point UP toward the sky, and his eyes gaze upward; he must look like he is comfortably looking overhead while lying on his back, not looking sideways at someone. The back of his head rests naturally on his hand. Keep the cigarette between his lips, now angled upward with his head. Preserve his recognizable likeness, hair and temple tattoo. Keep the entire body pose, other hand on abdomen, UFC T-shirt and shorts, feet, composition, crisp 16-bit pixel-art style and palette unchanged. Wide horizontal sprite, same transparent background and generous transparent space above his head. Do not draw any smoke, it will be animated separately. No scenery, no caption, no additional objects.",
+  "revision_source": "/Users/tawfiqabubaker/.codex/generated_images/01a1d039-47fa-7d40-b49f-6b48266b2c25/exec-d721ca55-6aa8-4927-b89d-d1a03c93c6a7.png",
+  "current_generated_file": "/Users/tawfiqabubaker/.codex/generated_images/01a1d039-47fa-7d40-b49f-6b48266b2c25/exec-5b596b69-2ac6-4645-90b3-c557a1e8b011.png",
+  "display_width_px": 80,
+  "shirtless_revision": "Remove the black T-shirt, showing a natural athletic bare chest and abdomen without invented body tattoos. Preserve the UFC shorts, reclining pose, upward gaze, cigarette position, 3:1 composition, pixel-art style and transparent background. No baked-in smoke."
+}

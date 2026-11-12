@@ -4,8 +4,11 @@
 // switch, right-click for its menu, drag to reorder.
 
 import { View, div, svg, image } from "gpui-kit";
+import { FIGHTERS, assignFighters } from "./fighters.js";
+import { HAS_COUNTRY_WASH, countryWash, flagSettings } from "./country-wash.js";
+import { initSpaceMenu, renderSpaceMenu } from "./space-menus.js";
 import { v_flex, h_flex } from "gpui-base";
-import { spaces, machines, panes, run, openOverlay, exec, hc, theme, shared, setShared, watchFolder, window, layout, nextCommand } from "herdr";
+import { props, spaces, machines, panes, run, openOverlay, exec, hc, theme, shared, setShared, watchFolder, window, layout, nextCommand } from "herdr";
 
 function find(node, id) {
   if (node?.id === id) return node;
@@ -37,17 +40,7 @@ const FALLBACK = 60000;
 // What a stored color name looks like on an avatar (the same in every mod
 // that draws space avatars): one strong color per hue, light and dark alike.
 const MARK = { ansi6: "#22a99a", ansi3: "#e3814f", ansi4: "#5b8def", ansi5: "#8b7cf6", ansi2: "#3fae6a", ansi1: "#d9649a" };
-const FIGHTERS = [
-  { name: "Conor McGregor", icon: "mods/spaces-indexed/fighter-01-conor.svg" },
-  { name: "Khabib Nurmagomedov", icon: "mods/spaces-indexed/fighter-02-khabib.svg" },
-  { name: "Jon Jones", icon: "mods/spaces-indexed/fighter-03-jon-jones.svg" },
-  { name: "Amanda Nunes", icon: "mods/spaces-indexed/fighter-04-amanda.svg" },
-  { name: "Israel Adesanya", icon: "mods/spaces-indexed/fighter-05-israel.svg" },
-  { name: "Alex Pereira", icon: "mods/spaces-indexed/fighter-06-alex.svg" },
-  { name: "Ronda Rousey", icon: "mods/spaces-indexed/fighter-07-ronda.svg" },
-  { name: "Valentina Shevchenko", icon: "mods/spaces-indexed/fighter-08-valentina.svg" },
-  { name: "Charles Oliveira", icon: "mods/spaces-indexed/fighter-09-charles.svg" },
-];
+
 
 // A space speaks up only when something in it needs you.
 export function glyph(status) {
@@ -60,6 +53,11 @@ export function tone(t, status) {
 
 export default class Spaces extends View {
   init(_props, cx) {
+    const mode = props()?.mode;
+    if (mode === "space-menu" || mode === "fighter-picker") {
+      initSpaceMenu(this, cx, mode);
+      return;
+    }
     this.git = {}; // where() -> { name, branch, ahead, behind, repo, linked }, null: not a repo
     this.checked = {}; // where() -> when it was last looked at
     this.unsure = new Set(); // where()s git couldn't answer for (a machine away)
@@ -273,7 +271,7 @@ export default class Spaces extends View {
 
   menu(w) {
     // A popup is as tall as its items; height is only the most.
-    openOverlay({ mod: "menu", kind: "popup", width: 200, height: 260, props: { tab: "space", target: { id: w.id } } });
+    openOverlay({ mod: "spaces-indexed", kind: "popup", width: 220, height: 260, props: { mode: "space-menu", space: w.id } });
   }
 
   orderingDue(now) {
@@ -417,10 +415,11 @@ export default class Spaces extends View {
     const colors = shared("space.colors") ?? {};
     const color = colors[w.id] ?? "ansi6";
     const fill = color.startsWith("#") ? color : (MARK[color] ?? t[color]);
-    const fighter = FIGHTERS[i % FIGHTERS.length];
+    const fighter = FIGHTERS.find(fighter => fighter.id === this.fighterAssignments[w.id]) ?? FIGHTERS[0];
     return v_flex()
       .relative()
       .id(`space-${w.id}`)
+      .tooltip(`${w.name} · ${fighter.name}`)
       .px(8)
       .h(rowHeight({ tree }))
       .flex_none()
@@ -428,6 +427,7 @@ export default class Spaces extends View {
       .rounded(8)
       .when(on, (el) => el.bg(t.selected))
       .when(!on, (el) => el.hover((s) => s.bg(t.hover)))
+      .when(HAS_COUNTRY_WASH.has(fighter.id) && flagSettings().enabled, el => el.child(countryWash(fighter.id)))
       .when(this.pressed === w.id && this.over !== w.id, (el) => el.opacity(0.5))
       .when(this.pressed !== null && this.over === w.id && this.pressed !== w.id, (el) => el.child(
         div().absolute().left(0).right(0).h(2).bg(t.accent)
@@ -460,21 +460,23 @@ export default class Spaces extends View {
       .on_mouse_down("right", () => this.menu(w))
       .child(
         h_flex()
+          .relative()
           .gap(5)
           .items_center()
           // Match spaces() order, the same 1-based order used by ctrl+1..9.
           .when(i < 9, el => el.child(div().w(14).flex_none().text_size(10).text_color(t.dim).child(String(i + 1))))
           .when(Boolean(tree), el => el.pl(22).child(svg("mods/workspace-chrome/branch.svg").size(13).text_color(t.dim)))
-          .child(image(fighter.icon).size(22).flex_none().tooltip(fighter.name))
+          .child(image(fighter.icon).size(22).flex_none())
           .child(div().flex_shrink(0).max_w(150).truncate().text_color(t.foreground).child(w.name))
           .child(g ? this.gitTail(g, tree, w.name, t) : div().flex_1()),
       );
   }
 
   compact({ w, i }, t) {
-    const fighter = FIGHTERS[i % FIGHTERS.length];
+    const fighter = FIGHTERS.find(fighter => fighter.id === this.fighterAssignments[w.id]) ?? FIGHTERS[0];
     return railCell(h_flex()
       .id(`space-${w.id}`)
+      .tooltip(`${w.name} · ${fighter.name}`)
       .relative()
       .w(RAIL_CELL)
       .h(26)
@@ -483,18 +485,28 @@ export default class Spaces extends View {
       .items_center()
       .when(w.active, (el) => el.bg(t.selected))
       .when(!w.active, (el) => el.hover((s) => s.bg(t.hover)))
+      .when(HAS_COUNTRY_WASH.has(fighter.id) && flagSettings().enabled, el => el.child(countryWash(fighter.id)))
+      .on_mouse_down("right", () => this.menu(w))
       .on_click(() => run("space.select", { id: w.id }))
-      .child(div().relative().size(24).flex_none().tooltip(fighter.name)
+      .child(div().relative().size(24).flex_none()
         .child(image(fighter.icon).size(24))
         .when(i < 9, el => el.child(div().absolute().left(-1).top(-1).size(11).rounded(6).border_1().border_color(t.chrome).bg(t.selected).items_center().justify_center().text_size(7).font_bold().text_color(t.foreground).child(String(i + 1)))))
       .child(div().absolute().right(5).text_color(tone(t, w.status)).child(glyph(w.status))));
   }
 
+  close() {
+    this.flagSlider?.release();
+  }
+
   render() {
+    if (this.spaceMenuMode) return renderSpaceMenu(this);
     const t = theme();
     const collapsed = narrow();
     const palette = ["ansi6", "ansi3", "ansi4", "ansi5", "ansi2", "ansi1"];
     const sp = spaces();
+    const fighters = assignFighters(sp, shared("space.fighters"));
+    this.fighterAssignments = fighters.assignments;
+    if (fighters.changed) setShared("space.fighters", fighters.assignments);
     const ids = new Set(sp.map(p => p.id));
     const kept = Object.fromEntries(Object.entries(shared("space.colors") ?? {}).filter(([id]) => ids.has(id)));
     let changed = Object.keys(kept).length !== Object.keys(shared("space.colors") ?? {}).length;

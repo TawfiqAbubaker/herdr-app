@@ -1,0 +1,565 @@
+{
+  "islam": {
+    "result": {
+      "name": "Islam Makhachev",
+      "angle": "Almost frontal, slight turn toward viewer's left; requested approximately 10 degrees",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/islam/portrait.png",
+      "chosen_distinctive_details": [
+        "Short dark close-cropped hair",
+        "Strong dark eyebrows and deep-set brown eyes",
+        "Prominent nose and large ears",
+        "Dense dark beard along jaw and chin, central patch below lower lip, sparse moustache",
+        "Focused expression with closed mouth"
+      ],
+      "source_reference_urls": [
+        "https://www.espn.com/mma/fighter/_/id/3332412/islam-makhachev",
+        "https://a.espncdn.com/i/headshots/mma/players/full/3332412.png",
+        "https://www.ufc.com/athlete/islam-makhachev"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "original_generated_file": "/Users/tawfiqabubaker/.codex/generated_images/01a1d097-4973-7ea3-a940-02422ab3aa8c/exec-80d0f381-1ad8-4639-8de8-9317a3f80bed.png",
+      "generation_mode": "Built-in image_gen; transparent_background true; one initial image, no regeneration",
+      "prompt": "Use case: stylized-concept.\nCreate ONE polished square transparent PNG pixel-art sidebar portrait of Islam Makhachev.\nInput image 1 (/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png): STYLE ONLY. Match its polished 16-bit fighting-game portrait aesthetic, square pixel clusters, bold light and shadow planes, restrained warm skin palette, crisp stepped silhouette, controlled pixel texture and high contrast. Do not copy that person's identity, headband, accessories, angle or long neck.\nInput image 2 (/private/tmp/islam-photo-reference.png): actual Islam Makhachev PHOTO LIKENESS reference only. Accurately preserve his distinct facial proportions: short close-cropped dark brown hair with subtly uneven hairline, strong dark eyebrows, deep-set brown eyes, long prominent slightly broad nose, large ears, relatively narrow midface, dense dark beard strongest along jaw and chin with a central patch below lower lip, very sparse short moustache and visible upper lip. Light olive warm skin. Recognizably Islam, not generic bearded fighter.\nComposition: almost frontal head, turned ONLY 10 degrees toward the viewer's left. Both eyes clearly visible, nose slightly left of center, focused calm expression, closed mouth. Tight head crop, head and face dominate approximately 90% of the square height, only tiny neck base, no shoulders or torso. Entire hair and chin silhouette visible with a small transparent margin.\nMedium: deliberate real pixel art with visibly square clusters, cohesive coarse pixel grid akin to a 128x128 sprite enlarged cleanly; limited palette, dark silhouette edges as part of sprite, sculpted highlights, no smooth painted gradients or blurry antialiasing. Simplify features so brows, nose and beard remain readable at 22–24px on a dark sidebar.\nBackground: genuine transparent alpha everywhere outside the isolated head. No backdrop, no floor, no shadow.\nConstraints: one portrait only, no text, no border, no watermark, no belt, no clothing logos, no accessories, no headband, no hat, no tattoos, no tongue. Use the photo's natural features.",
+      "limitations": [
+        "The generated head turn is subtle and its exact angle is not measured.",
+        "Pixel-art likeness and details naturally simplify at 22–24px; no application integration performed."
+      ]
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Islam Makhachev. The user explicitly assigned one Codex/Herdr instance per fighter; you own only this fighter. Do not start subagents. Do not edit Herdr config, other fighter folders, or install assets in the app. Your output folder is /Users/tawfiqabubaker/Documents/herdr-fighter-icons/islam.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use the built-in image_gen tool. If unavailable, report that blocker; do not substitute SVG drawings, canvas, Python drawing, or an API image model. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's face. Inspect the reference with view_image if needed. Research actual reference photos online to get this fighter's likeness and distinctive details right. Do not invent cultural accessories or tattoos. Prefer an accessory actually worn in face-offs if verified; otherwise use distinctive natural features. Suggested detail: short dark hair and distinctive beard.\n\nAssigned unique angle: almost frontal, head turned 10 degrees to the left. Tight head crop so face fills the icon, minimum neck/shoulders, neutral or focused expression, mouth closed, no tongue. Match the reference's polished 16-bit pixel art, deliberate square pixel clusters, limited palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22–24px in a dark sidebar. No text, border or watermark. Use transparent_background true. Generate only ONE initial image, inspect it, and regenerate only if it substantially misses the requirements. Copy the generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/islam/portrait.png, leaving the original generated file in place.\n\nWrite /Users/tawfiqabubaker/Documents/herdr-fighter-icons/islam/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and any limitations. Send a short completion or blocker report to parent with hc send t1n. Stay available for revisions. This task authorizes generating this one portrait now; no further user confirmation needed."
+  },
+  "shavkat": {
+    "result": {
+      "name": "Shavkat Rakhmonov",
+      "angle": "Right-facing three-quarter view at approximately 45 degrees",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/shavkat/portrait.png",
+      "chosen_distinctive_details": [
+        "Verified cream/tan fur hat with dark tips, upturned front crest, dark crown and rear drape",
+        "Narrow dark eyes, broad cheekbones, squared jaw and sparse facial stubble",
+        "Focused expression and closed mouth"
+      ],
+      "source_reference_urls": [
+        "https://www.ufcespanol.com/news/shavkat-rakhmonov-el-proximo-retador-welter",
+        "https://www.ufc.com/images/styles/inline/s3/2024-12/1292024-Shavkat-Rakhmonov-GettyImages-2188814891_1.jpeg?itok=46Jn96V0",
+        "https://www.nur.kz/sport/mma/2197515-shavkat-rahmonov-protiv-iena-machado-gerri-vo-skolko-boy-translyaciya/",
+        "https://cdn.nur.kz/images/1200x675/8bede0cd11f9e119.jpeg?version=1"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "limitations": [
+        "Stylized likeness rather than a photorealistic reconstruction.",
+        "Verified fur hat occupies much of the silhouette; fine facial detail is necessarily limited at 22–24px.",
+        "Visual inspection completed at generated resolution; no separate 22–24px rendered preview was created."
+      ],
+      "generation": {
+        "mode": "built-in image_gen",
+        "initial_images": 1,
+        "regenerations": 0,
+        "original_generated_file": "/Users/tawfiqabubaker/.codex/generated_images/01a1d097-8bb8-7cb2-a1a6-c0c0461382ba/exec-c212d867-d308-4b2e-9093-70b4b5c7bd82.png",
+        "transparent_background": true,
+        "prompt": "Use case: stylized-concept.\nCreate ONE finished square transparent PNG pixel-art sidebar portrait of MMA fighter Shavkat Rakhmonov.\nInput images: reference 1 is STYLE ONLY, a different fighter; do NOT copy its face, headband or accessories. References 2 and 3 are actual Shavkat face-off photos for identity and verified fur hat appearance.\nSubject/likeness: Shavkat's broad high cheekbones, narrow dark almond eyes, straight dark brows, broad fairly flat nose, compact closed lips, squared jaw and sparse dark facial stubble; medium warm tan skin. Reproduce his actual distinctive tan/cream fur hat shown in photos: darker brown fur tips and underside, upturned tall front fur crest, rounded side volume, dark crown barely visible, rear fur drape. No invented ornaments, symbols, feathers or tattoos.\nComposition: RIGHT-FACING THREE-QUARTER VIEW, head rotated 45 degrees toward image right, both eyes visible with far eye foreshortened. NOT a side profile. Tight head crop; head and hat fill nearly all square with small transparent margin, very short neck cutoff, almost no shoulders. Compress hat's rear drape behind head to keep face dominant and legible at 22–24px. Neutral focused expression, mouth closed.\nStyle: match reference 1's polished 16-bit arcade portrait aesthetic, deliberate crisp square pixel clusters and stepped contours, limited warm tan/peach/brown/cream palette, dark contour and high contrast sculpted shading, strongly readable silhouette. Render as if a carefully hand-pixelled roughly 128px sprite enlarged with nearest-neighbor pixels, coherent pixel grid. Fur texture made of intentional block clusters. Face gets most of visual emphasis.\nBackground: genuine transparent alpha, isolated cutout. No backdrop, cast shadow, checkerboard pattern, text, border, logo, watermark, headband, tongue, extra people or objects. Only one portrait."
+      }
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Shavkat Rakhmonov. The user explicitly assigned one Codex/Herdr instance per fighter; you own only this fighter. Do not start subagents. Do not edit Herdr config, other fighter folders, or install assets in the app. Your output folder is /Users/tawfiqabubaker/Documents/herdr-fighter-icons/shavkat.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use the built-in image_gen tool. If unavailable, report that blocker; do not substitute SVG drawings, canvas, Python drawing, or an API image model. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's face. Inspect the reference with view_image if needed. Research actual reference photos online to get this fighter's likeness and distinctive details right. Do not invent cultural accessories or tattoos. Prefer an accessory actually worn in face-offs if verified; otherwise use distinctive natural features. Suggested detail: his fur hat, only after verifying its actual appearance in face-off photos.\n\nAssigned unique angle: right-facing three-quarter view at 45 degrees. Tight head crop so face fills the icon, minimum neck/shoulders, neutral or focused expression, mouth closed, no tongue. Match the reference's polished 16-bit pixel art, deliberate square pixel clusters, limited palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22–24px in a dark sidebar. No text, border or watermark. Use transparent_background true. Generate only ONE initial image, inspect it, and regenerate only if it substantially misses the requirements. Copy the generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/shavkat/portrait.png, leaving the original generated file in place.\n\nWrite /Users/tawfiqabubaker/Documents/herdr-fighter-icons/shavkat/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and any limitations. Send a short completion or blocker report to parent with hc send t1n. Stay available for revisions. This task authorizes generating this one portrait now; no further user confirmation needed."
+  },
+  "aspinall": {
+    "result": {
+      "name": "Tom Aspinall",
+      "angle": "Left-facing three-quarter view at 35 degrees",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/aspinall/portrait.png",
+      "distinctive_details": [
+        "Short wavy dark brown hair with faded sides",
+        "Blue-gray eyes and thick dark brows",
+        "Mustache and dark chin/jaw beard with lighter cheek growth",
+        "Broad facial structure and substantial rounded nose"
+      ],
+      "source_reference_urls": [
+        "https://www.ufc.com/athlete/tom-aspinall",
+        "https://www.ufc.com.br/news/tom-aspinall-wears-the-crown-with-ease-ufc-321",
+        "https://www.ufc.com/images/styles/background_image_sm/s3/2025-10/102125-Tom-Aspinall-Media-Day-HERO.jpg?h=d1cb525d&itok=jr13pHhf",
+        "https://image.tmdb.org/t/p/original/2CgtB6ovBAxgFJ4zdY2mq8rprHQ.jpg"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "limitations": [
+        "Stylized likeness and 35-degree angle are approximate.",
+        "Beard follows the photographed darker chin and lighter cheeks rather than an invented uniformly full beard.",
+        "Not installed in the application; actual 22–24px sidebar appearance has not been tested."
+      ],
+      "generation_tool": "Built-in image_gen",
+      "generation_prompt": "Use case: stylized-concept\nCreate ONE polished square transparent PNG pixel-art sidebar portrait of Tom Aspinall, the British MMA fighter.\nReferences: attached pixel-art head is STYLE ONLY: match its polished 16-bit fighting-game rendering, deliberate square pixel clusters, stepped contours, limited warm skin palette and dark high-contrast hair. Do not copy its identity, headband, angle or accessories. The inspected actual photos of Tom Aspinall provide identity: short dark brown wavy/curly hair with close faded sides, pale warm skin, blue-gray eyes, thick fairly straight dark brows, long broad facial structure, substantial straight nose with rounded tip, mustache and dark chin/jaw beard with lighter sparse cheek growth. Make recognizable Tom Aspinall, avoiding a generic thick-bearded man.\nComposition: head rotated 35 degrees toward the LEFT edge of image, left-facing three-quarter view, both eyes still visible; nose points left. Tight head crop, entire hair silhouette and chin inside canvas, face occupies nearly all frame, only a tiny hint of bare neck, no shoulders or chest. Calm focused neutral expression, mouth closed.\nRendering: polished hand-placed 16-bit pixel art, square clusters at a consistent coarse pixel scale, crisp edges, strong dark brown silhouette outlines integrated into the art, controlled stepped highlights and shadows, no smooth gradients or blur. Simplify features to remain legible at 22–24px on a dark sidebar. Full-size square asset with a compact approximately 128px logical pixel grid appearance. Natural hair and beard are the distinctive details. No invented accessories, no headband, no jewelry, no visible tattoos due to tight crop.\nBackground: genuine alpha transparency around the isolated head. No text, no border, no watermark, no panel or backdrop.\nGenerate only a single image.",
+      "original_generated_file": "/Users/tawfiqabubaker/.codex/generated_images/01a1d097-99a7-7842-94d4-12d6f26f2337/exec-7fa5bf2f-53b2-41e9-ba06-23adbc1f7246.png"
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Tom Aspinall. The user explicitly assigned one Codex/Herdr instance per fighter; you own only this fighter. Do not start subagents. Do not edit Herdr config, other fighter folders, or install assets in the app. Your output folder is /Users/tawfiqabubaker/Documents/herdr-fighter-icons/aspinall.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use the built-in image_gen tool. If unavailable, report that blocker; do not substitute SVG drawings, canvas, Python drawing, or an API image model. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's face. Inspect the reference with view_image if needed. Research actual reference photos online to get this fighter's likeness and distinctive details right. Do not invent cultural accessories or tattoos. Prefer an accessory actually worn in face-offs if verified; otherwise use distinctive natural features. Suggested detail: his dark hair and full beard.\n\nAssigned unique angle: left-facing three-quarter view at 35 degrees. Tight head crop so face fills the icon, minimum neck/shoulders, neutral or focused expression, mouth closed, no tongue. Match the reference's polished 16-bit pixel art, deliberate square pixel clusters, limited palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22–24px in a dark sidebar. No text, border or watermark. Use transparent_background true. Generate only ONE initial image, inspect it, and regenerate only if it substantially misses the requirements. Copy the generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/aspinall/portrait.png, leaving the original generated file in place.\n\nWrite /Users/tawfiqabubaker/Documents/herdr-fighter-icons/aspinall/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and any limitations. Send a short completion or blocker report to parent with hc send t1n. Stay available for revisions. This task authorizes generating this one portrait now; no further user confirmation needed."
+  },
+  "gaethje": {
+    "result": {
+      "name": "Justin Gaethje",
+      "angle": "Straight frontal, chin slightly lowered, eyes looking forward",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/gaethje/portrait.png",
+      "chosen_distinctive_details": [
+        "Short side-brushed sandy reddish-blond hair with cropped sides",
+        "Trimmed ginger beard and connected mustache",
+        "Pale blue-gray eyes",
+        "Broad nose and prominent ears"
+      ],
+      "source_reference_urls": [
+        "https://www.themoviedb.org/person/1185674-justin-gaethje",
+        "https://image.tmdb.org/t/p/w500/58Px9FI9jgj4mys49eEoGCfmLGV.jpg",
+        "https://www.ufc.com/athlete/justin-gaethje"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "generation_mode": "built-in image_gen",
+      "generation_count": 1,
+      "original_generated_file": "/Users/tawfiqabubaker/.codex/generated_images/01a1d097-a09f-7211-9517-d652fc732d5d/exec-7eb9e3e7-a82f-47e3-b099-a9b538e3dd34.png",
+      "limitations": [
+        "AI-stylized likeness; fine facial detail is reduced at 22–24px.",
+        "App sidebar rendering was not tested; no app assets or configuration were changed."
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE polished square transparent PNG pixel-art sidebar portrait of Justin Gaethje.\nInput reference roles: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png is STYLE ONLY (a different fighter; do not copy his face or headband). /tmp/gaethje-reference.jpg is Justin Gaethje's actual FACE AND LIKENESS reference.\nSubject: recognizable Justin Gaethje, fair lightly weathered skin, short sandy reddish-blond/light brown hair brushed to the side with cropped sides, rust ginger full neatly trimmed beard and connected mustache, pale blue-gray eyes, broad substantial nose, slightly prominent ears, broad squared facial structure. Match actual reference photo facial proportions. No accessories, no tattoos.\nComposition: straight frontal, chin slightly lowered, both eyes looking directly forward; neutral focused expression, closed mouth, no tongue. Tight head-only crop, head fills nearly the entire square with a little transparent margin around hair/ears/chin; only a tiny hint of neck, no shoulders.\nStyle: match the supplied pixel-art style reference: polished premium 16-bit fighting-game portrait, deliberate visibly square pixel clusters, hard stepped pixel edges, controlled limited warm skin palette with dark brown contour shadows, high contrast sculpted face planes, readable strong silhouette. Prioritize large readable facial shapes for display at 22–24 pixels on a dark sidebar. Crisp pixel art, no smooth airbrush, no painterly texture, no photographic rendering. Keep hair/beard clear and ginger.\nBackground: genuinely transparent alpha. No text, frame, border, watermark, background scene, headband, cultural accessories or extra objects. Generate exactly one image."
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Justin Gaethje. The user explicitly assigned one Codex/Herdr instance per fighter; you own only this fighter. Do not start subagents. Do not edit Herdr config, other fighter folders, or install assets in the app. Your output folder is /Users/tawfiqabubaker/Documents/herdr-fighter-icons/gaethje.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use the built-in image_gen tool. If unavailable, report that blocker; do not substitute SVG drawings, canvas, Python drawing, or an API image model. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's face. Inspect the reference with view_image if needed. Research actual reference photos online to get this fighter's likeness and distinctive details right. Do not invent cultural accessories or tattoos. Prefer an accessory actually worn in face-offs if verified; otherwise use distinctive natural features. Suggested detail: his reddish-blond hair and beard.\n\nAssigned unique angle: straight frontal with chin slightly lowered, eyes looking forward. Tight head crop so face fills the icon, minimum neck/shoulders, neutral or focused expression, mouth closed, no tongue. Match the reference's polished 16-bit pixel art, deliberate square pixel clusters, limited palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22–24px in a dark sidebar. No text, border or watermark. Use transparent_background true. Generate only ONE initial image, inspect it, and regenerate only if it substantially misses the requirements. Copy the generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/gaethje/portrait.png, leaving the original generated file in place.\n\nWrite /Users/tawfiqabubaker/Documents/herdr-fighter-icons/gaethje/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and any limitations. Send a short completion or blocker report to parent with hc send t1n. Stay available for revisions. This task authorizes generating this one portrait now; no further user confirmation needed."
+  },
+  "poirier": {
+    "result": {
+      "name": "Dustin Poirier",
+      "angle": "right-facing 90-degree profile",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/poirier/portrait.png",
+      "chosen_distinctive_details": [
+        "Short light-brown hair with close faded sides",
+        "Prominent brow and nose silhouette",
+        "Projecting chin and angular jaw",
+        "Light facial stubble",
+        "No accessory; tightly cropped neck omits tattoos"
+      ],
+      "source_reference_urls": [
+        "https://www.espn.com.br/mma/ufc/artigo/_/id/13727404/vai-ficar-estirado-rezando-poirier-makhachev-trocam-juras-durante-encarada-tensa",
+        "https://a.espncdn.com/photo/2024/0530/r1339693_1296x729_16-9.jpg"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "generation": {
+        "tool": "built-in image_gen",
+        "initial_images": 1,
+        "regenerations": 0,
+        "original": "/Users/tawfiqabubaker/.codex/generated_images/01a1d097-aa25-7a31-a627-41217eabc89a/exec-70aa1f27-9511-431b-aaf2-cd8d184e96fd.png",
+        "prompt_file": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/poirier/prompt.txt"
+      },
+      "validation": {
+        "width": 1254,
+        "height": 1254,
+        "alpha_channel": true,
+        "visually_inspected": true
+      },
+      "limitations": [
+        "Stylized likeness; generated top hair is somewhat fuller than the short crop in the face-off photo.",
+        "Fine hair and stubble details will compress at 22–24px; final appearance depends on the app's downsampling.",
+        "No app installation or Herdr configuration changes performed."
+      ]
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Dustin Poirier. The user explicitly assigned one Codex/Herdr instance per fighter; you own only this fighter. Do not start subagents. Do not edit Herdr config, other fighter folders, or install assets in the app. Your output folder is /Users/tawfiqabubaker/Documents/herdr-fighter-icons/poirier.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use the built-in image_gen tool. If unavailable, report that blocker; do not substitute SVG drawings, canvas, Python drawing, or an API image model. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's face. Inspect the reference with view_image if needed. Research actual reference photos online to get this fighter's likeness and distinctive details right. Do not invent cultural accessories or tattoos. Prefer an accessory actually worn in face-offs if verified; otherwise use distinctive natural features. Suggested detail: his characteristic short hair and facial silhouette; only accurately referenced visible tattoos.\n\nAssigned unique angle: strict right-facing 90-degree profile. Tight head crop so face fills the icon, minimum neck/shoulders, neutral or focused expression, mouth closed, no tongue. Match the reference's polished 16-bit pixel art, deliberate square pixel clusters, limited palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22–24px in a dark sidebar. No text, border or watermark. Use transparent_background true. Generate only ONE initial image, inspect it, and regenerate only if it substantially misses the requirements. Copy the generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/poirier/portrait.png, leaving the original generated file in place.\n\nWrite /Users/tawfiqabubaker/Documents/herdr-fighter-icons/poirier/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and any limitations. Send a short completion or blocker report to parent with hc send t1n. Stay available for revisions. This task authorizes generating this one portrait now; no further user confirmation needed.",
+    "prompt_file": "Use case: stylized-concept. Create exactly ONE square transparent PNG: polished 16-bit pixel-art sidebar portrait of UFC fighter Dustin Poirier.\nReferences visible in this conversation: the pixel-art headband fighter is STYLE ONLY, never copy that man's face, headband, accessories or beard. The ESPN face-off photograph is LIKENESS reference: Dustin Poirier is the blond/light-brown-haired man on the RIGHT wearing a colorful shirt, NOT the dark-bearded man on the left. Use Poirier's actual likeness and mirror his profile direction as needed.\nSubject details: adult Poirier, compact very short light brown/dark blond textured top, close skin-faded sides, strong brow and slightly sloping forehead, characteristic prominent bridge and blunt nose tip, tight closed lips, pronounced projecting chin and squared angular jaw, light short stubble, small fighter's ear. Warm light tan skin. No head accessory. No invented tattoos: crop neck closely and omit tattoos rather than guessing.\nComposition: STRICT 90-degree RIGHT-facing profile, nose points to the RIGHT edge, only one eye visible, no far eye or far cheek. Neutral focused expression, mouth closed, no tongue. Tight HEAD portrait; skull, ear, nose and chin dominate 90–94% of square height, very short neck stub only, no shoulders or torso. Keep complete head silhouette inside canvas with narrow transparent margin. Broad readable facial masses for a 22–24px icon on a dark sidebar.\nStyle: match the supplied style reference's polished arcade 16-bit pixel art, deliberate hard square pixel clusters, stepped silhouette, limited warm palette of about 20–30 colors, strong graphic dark-brown contour, crisp block highlights, high contrast. Simplify stubble into a few restrained clusters. Coarse enough that face silhouette remains readable at tiny icon size, handcrafted sprite aesthetic. No smooth painting, no blur, no antialiased vector look, no photoreal texture. Truly transparent background, no opaque backdrop, no checkerboard drawn into image, no text, no border, no watermark.\n"
+  },
+  "oliveira": {
+    "result": {
+      "name": "Charles Oliveira",
+      "angle": "Strict left-facing 90-degree profile",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/oliveira/portrait.png",
+      "chosen_distinctive_details": [
+        "Bleached platinum-blond textured top with closely faded sides",
+        "Lean angular face and prominent nose",
+        "Dark eyebrows, sparse mustache and chin/jaw stubble",
+        "Focused expression with closed mouth"
+      ],
+      "source_reference_urls": [
+        "https://www.bbc.com/sport/mixed-martial-arts/59590421",
+        "https://c.files.bbci.co.uk/10FE5/production/_122050696_gettyimages-1358164492.jpg",
+        "https://jp.ufc.com/news/charles-oliveira-good-vibes-only-bmf-ufc-326",
+        "https://www.ufc.com/athlete/charles-oliveira"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "generation_tool": "Built-in image_gen",
+      "original_generated_file": "/Users/tawfiqabubaker/.codex/generated_images/01a1d097-b483-7fa2-afbb-ff4505cd081f/exec-c76ac5e7-a66d-461d-aae1-9c2989cf286a.png",
+      "initial_images_generated": 1,
+      "limitations": [
+        "AI-stylized likeness; tiny sidebar rendering simplifies facial details.",
+        "No glasses or accessories used; bleached hair is the identifying detail."
+      ],
+      "prompt": "Use case: stylized-concept. Create ONE finished square transparent PNG pixel-art sidebar head portrait of UFC fighter Charles Oliveira.\nReference roles: the attached pixel portrait is STYLE ONLY, never copy its man, headband, beard, angle or accessories. The viewed BBC UFC 269 faceoff photograph is LIKENESS reference: Oliveira is the BLEACHED BLOND man on the LEFT of that photograph, NOT the dark-haired man on its right.\nSubject likeness: Charles Oliveira, warm tan Brazilian complexion, short bleached platinum-blond slightly curly textured top with very closely faded sides, dark eyebrows, elongated lean angular face, strong prominent nose with slightly downturned rounded tip, defined cheekbone, thin closed lips, sparse dark mustache and chin stubble with light jaw stubble, visible cauliflower ear. No glasses, headband, jewelry or invented tattoos.\nMANDATORY assigned angle: STRICT LEFT-FACING 90-DEGREE SIDE PROFILE, nose points to the LEFT edge of the image. Only ONE eye visible; far eye and far cheek invisible. Level gaze to the left, focused neutral expression, mouth completely closed, no tongue. Show the entire head from hair crown to chin; tight crop, head fills roughly 90% of the square height with only a very short neck stump, minimum shoulders. Natural anatomy.\nStyle: match the provided style reference's polished premium 16-bit fighting-game pixel art. Deliberate crisp square pixel clusters, staircase contours, dark brown contour edge, limited coordinated palette, warm copper and peach skin planes with deep brown shadows, ivory/platinum blond hair with pale-gold midtones. Use broad readable light/shadow clusters instead of dense noisy microdetail. Bold silhouette and face readable at 22–24px on a dark sidebar. Authored low-resolution sprite aesthetic scaled up sharply, no blur, no smooth painterly rendering, no vector curves.\nBackground: true transparent alpha everywhere outside the isolated head. No scene, no colored rectangle, no halo, no checkerboard baked in, no cast shadow. No text, no border, no watermark. Output exactly one portrait, not a sheet or multiple views.",
+      "validation": {
+        "width": 1254,
+        "height": 1254,
+        "format": "PNG",
+        "alpha_min": 0,
+        "alpha_max": 255,
+        "inspected": true
+      }
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Charles Oliveira. The user explicitly assigned one Codex/Herdr instance per fighter; you own only this fighter. Do not start subagents. Do not edit Herdr config, other fighter folders, or install assets in the app. Your output folder is /Users/tawfiqabubaker/Documents/herdr-fighter-icons/oliveira.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use the built-in image_gen tool. If unavailable, report that blocker; do not substitute SVG drawings, canvas, Python drawing, or an API image model. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's face. Inspect the reference with view_image if needed. Research actual reference photos online to get this fighter's likeness and distinctive details right. Do not invent cultural accessories or tattoos. Prefer an accessory actually worn in face-offs if verified; otherwise use distinctive natural features. Suggested detail: his bleached blond hair; glasses only if supported by a suitable actual reference.\n\nAssigned unique angle: strict left-facing 90-degree profile. Tight head crop so face fills the icon, minimum neck/shoulders, neutral or focused expression, mouth closed, no tongue. Match the reference's polished 16-bit pixel art, deliberate square pixel clusters, limited palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22–24px in a dark sidebar. No text, border or watermark. Use transparent_background true. Generate only ONE initial image, inspect it, and regenerate only if it substantially misses the requirements. Copy the generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/oliveira/portrait.png, leaving the original generated file in place.\n\nWrite /Users/tawfiqabubaker/Documents/herdr-fighter-icons/oliveira/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and any limitations. Send a short completion or blocker report to parent with hc send t1n. Stay available for revisions. This task authorizes generating this one portrait now; no further user confirmation needed."
+  },
+  "merab": {
+    "result": {
+      "name": "Merab Dvalishvili",
+      "angle": "Right-facing three-quarter view, approximately 65 degrees from frontal",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/merab/portrait.png",
+      "chosen_distinctive_details": [
+        "Shaggy brown/taupe papakha verified in the Jose Aldo face-off photograph; Merab is on the right",
+        "Reddish-brown full beard and connected moustache",
+        "Heavy brows, deep-set eyes, prominent nose and wrestler ear"
+      ],
+      "source_reference_urls": [
+        "https://a.espncdn.com/i/headshots/mma/players/full/3948572.png",
+        "https://mrwallpaper.com/wallpapers/merab-dvalishvili-and-aldo-face-off-r7734lpkdusw2ds3.html",
+        "https://mrwallpaper.com/images/high/merab-dvalishvili-and-aldo-face-off-r7734lpkdusw2ds3.jpg",
+        "https://primetime.ge/news/sporti/video-merab-dvalishvili-zhoze-aldostan-brdzolis-tsin-preskonferentsiaze-chokhit-mivida"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "generation_mode": "Built-in image_gen; one initial image, no regeneration",
+      "original_generated_file": "/Users/tawfiqabubaker/.codex/generated_images/01a1d097-bdf8-7e03-80c5-775ac5da5ae4/exec-ed042d6e-bd72-4fb7-b4cf-90bab4a9c50c.png",
+      "limitations": [
+        "Angle and likeness are artistic approximations.",
+        "The verified large papakha occupies substantial space; fine facial detail will simplify at 22–24px. No app sidebar integration was performed."
+      ]
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Merab Dvalishvili. The user explicitly assigned one Codex/Herdr instance per fighter; you own only this fighter. Do not start subagents. Do not edit Herdr config, other fighter folders, or install assets in the app. Your output folder is /Users/tawfiqabubaker/Documents/herdr-fighter-icons/merab.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use the built-in image_gen tool. If unavailable, report that blocker; do not substitute SVG drawings, canvas, Python drawing, or an API image model. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's face. Inspect the reference with view_image if needed. Research actual reference photos online to get this fighter's likeness and distinctive details right. Do not invent cultural accessories or tattoos. Prefer an accessory actually worn in face-offs if verified; otherwise use distinctive natural features. Suggested detail: his actual papakha if verified in face-off photos.\n\nAssigned unique angle: right-facing three-quarter view at 65 degrees. Tight head crop so face fills the icon, minimum neck/shoulders, neutral or focused expression, mouth closed, no tongue. Match the reference's polished 16-bit pixel art, deliberate square pixel clusters, limited palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22–24px in a dark sidebar. No text, border or watermark. Use transparent_background true. Generate only ONE initial image, inspect it, and regenerate only if it substantially misses the requirements. Copy the generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/merab/portrait.png, leaving the original generated file in place.\n\nWrite /Users/tawfiqabubaker/Documents/herdr-fighter-icons/merab/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and any limitations. Send a short completion or blocker report to parent with hc send t1n. Stay available for revisions. This task authorizes generating this one portrait now; no further user confirmation needed.",
+    "prompt_file": "Use case: stylized-concept. Generate ONE polished square transparent PNG sidebar portrait of Merab Dvalishvili.\nReference roles: style-reference.png is STYLE ONLY, not subject identity. merab-headshot.png is the actual fighter facial likeness reference. merab-aldo.jpg is verified papakha reference: Merab is on the RIGHT wearing the large shaggy BROWN papakha; Aldo is left.\nSubject likeness: Merab's distinctive compact rugged face, deep set brown eyes, heavy dark brows, pronounced long rounded slightly crooked nose, prominent wrestler ears, full close reddish brown beard and connected moustache. Preserve his identity from headshot. His real shaggy brown/taupe papakha as shown in face-off photograph, translated into readable chunky square pixel clusters, subtly lighter highlights so it reads against dark sidebar.\nComposition: right-facing three-quarter view at 65 degrees from frontal, nose points to viewer's RIGHT; near eye clear, far eye only a narrow sliver, near ear visible. Focused neutral expression, mouth firmly closed, no tongue. Extremely tight head portrait, face occupies most of icon, minimal short neck and no shoulders. Fit full silhouette inside square with narrow transparent margin; hat must not dwarf face.\nStyle: match supplied style reference's polished 16-bit fighting game pixel art, deliberate hard square pixel clusters, crisp stair step edges, flat limited warm skin/brown/charcoal palette, strong facial plane shading, high contrast, readable iconic silhouette at 22–24 pixels. Simplify fine detail into bold large clusters, no painterly soft brush, no smooth vector curves, no photorealism. Transparent background with actual alpha. No text, border, watermark, headband, invented jewelry, tattoos, flag or extra accessories. Output exactly one portrait.\n"
+  },
+  "topuria": {
+    "result": {
+      "name": "Ilia Topuria",
+      "angle": "Left-facing three-quarter view, requested 65 degrees",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/topuria/portrait.png",
+      "chosen_distinctive_details": [
+        "Close dark fade with short swept top",
+        "Strong thick eyebrows and deep-set brown eyes",
+        "Dense dark beard connected to mustache",
+        "Strong nose and compact jaw"
+      ],
+      "source_reference_urls": [
+        "https://www.diezminutos.es/famosos-corazon/famosos-espanoles/a46838951/ilia-topuria-campeon-del-mundo-ufc/",
+        "https://hips.hearstapps.com/hmg-prod/images/ilia-topuria-of-germany-poses-on-the-scale-during-the-ufc-news-photo-1708254283.jpg?crop=0.93358xw%3A1xh%3Bcenter%2Ctop&resize=1200%3A%2A",
+        "https://www.ufc.com/athlete/ilia-topuria"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "limitations": [
+        "Stylized likeness; exact 65-degree rotation is approximate.",
+        "Fine beard and fade texture may merge at 22–24px.",
+        "UFC athlete page returned HTTP 403; the actual inspected likeness photo was the Getty weigh-in photograph reproduced by Diez Minutos."
+      ],
+      "generation": {
+        "tool": "built-in image_gen",
+        "initial_images": 1,
+        "regenerations": 0,
+        "transparent_background": true,
+        "original_file": "/Users/tawfiqabubaker/.codex/generated_images/01a1d097-bc81-7350-917f-04db30479b33/exec-7b88e3ff-ae4a-40e8-b7ad-ef57d3b1eaf3.png",
+        "prompt": "Use case: stylized-concept. Create ONE polished 16-bit pixel-art sidebar portrait of UFC fighter ILIA TOPURIA, square PNG with genuinely transparent background. Input image 1 (style-reference.png) is STYLE ONLY: match the deliberate sharp square pixel clusters, controlled warm skin palette, strong high contrast facial modeling and readable stepped silhouette; do not copy that person's face or headband. Input image 2 (reference-topuria.jpg) is the actual Topuria LIKENESS reference only; ignore its pose, body, jewelry, tattoos, backdrop and lettering. Depict Topuria's recognizable close dark fade with short neatly swept dark top, thick strong dark eyebrows, deep-set brown eyes, substantial straight nose, compact dense dark beard connected to mustache, warm olive skin and strong jaw. Assigned pose: LEFT-FACING three-quarter at 65 degrees away from frontal, nose points to the LEFT edge, near right ear visible, far eye only partly visible. Focused neutral expression, mouth closed. Extremely tight head portrait, full hair silhouette through beard chin, only a tiny sliver of upper neck, NO shoulders or chest visible. Head fills about 92 percent of canvas height with a narrow transparent margin. Bold feature masses must remain legible at 22–24px on a dark sidebar. Crisp pixel-art edges and deliberate square clusters throughout, limited palette, no soft airbrush or smooth photorealism. No accessory, headband, invented tattoo, text, border, background scene, glow or watermark. Generate exactly one portrait."
+      }
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Ilia Topuria. The user explicitly assigned one Codex/Herdr instance per fighter; you own only this fighter. Do not start subagents. Do not edit Herdr config, other fighter folders, or install assets in the app. Your output folder is /Users/tawfiqabubaker/Documents/herdr-fighter-icons/topuria.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use the built-in image_gen tool. If unavailable, report that blocker; do not substitute SVG drawings, canvas, Python drawing, or an API image model. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's face. Inspect the reference with view_image if needed. Research actual reference photos online to get this fighter's likeness and distinctive details right. Do not invent cultural accessories or tattoos. Prefer an accessory actually worn in face-offs if verified; otherwise use distinctive natural features. Suggested detail: his close fade, dark beard and strong eyebrows.\n\nAssigned unique angle: left-facing three-quarter view at 65 degrees. Tight head crop so face fills the icon, minimum neck/shoulders, neutral or focused expression, mouth closed, no tongue. Match the reference's polished 16-bit pixel art, deliberate square pixel clusters, limited palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22–24px in a dark sidebar. No text, border or watermark. Use transparent_background true. Generate only ONE initial image, inspect it, and regenerate only if it substantially misses the requirements. Copy the generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/topuria/portrait.png, leaving the original generated file in place.\n\nWrite /Users/tawfiqabubaker/Documents/herdr-fighter-icons/topuria/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and any limitations. Send a short completion or blocker report to parent with hc send t1n. Stay available for revisions. This task authorizes generating this one portrait now; no further user confirmation needed."
+  },
+  "volkanovski": {
+    "result": {
+      "name": "Alexander Volkanovski",
+      "angle": "Near frontal, turned approximately 15 degrees toward viewer's right, chin slightly raised",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/volkanovski/portrait.png",
+      "distinctive_details": [
+        "Shaved bald head",
+        "Strong dark brow and brown eyes",
+        "Close full brown beard and connected moustache",
+        "Prominent ears"
+      ],
+      "source_reference_urls": [
+        "https://www.ufc.com/news/alexander-volkanovski-longest-division-win-streaks-ufc-usman-silva-jones-holloway-ufc-298",
+        "https://www.ufc.com/images/styles/background_image_sm/s3/image/2024-02/021124-HERO_ufc-298-volkanovski-longest-title-streaks_GettyImages-1981084771.jpg?h=d1cb525d&itok=wI-bPe0a"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "limitations": [
+        "Stylized likeness; angle is approximate.",
+        "Fine beard texture will simplify at 22–24px; final in-app rendering was not tested."
+      ],
+      "generation": {
+        "tool": "built-in image_gen",
+        "initial_images": 1,
+        "regenerations": 0,
+        "original_path": "/Users/tawfiqabubaker/.codex/generated_images/01a1d097-a418-7100-b826-a89ce2b412f2/exec-ff4c19ae-7463-478e-a42c-496f5aef4bdb.png",
+        "prompt": "Use case: stylized-concept. Create ONE polished square pixel-art sidebar portrait of Alexander Volkanovski.\nInput images: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png is STYLE ONLY, not subject identity. /tmp/volkanovski-ufc.jpg is the actual Alexander Volkanovski likeness reference; use his face only, omit clothes, belt, jewelry, background and fist.\nComposition: near frontal, head rotated just 15 degrees toward viewer's right, chin slightly raised, both eyes visible, focused neutral expression, mouth closed. Extremely tight head crop: bald scalp almost touches top, ears close to sides, beard/chin close to bottom, only a tiny short neck base, no broad shoulders.\nLikeness: recognizable Alexander Volkanovski, shaved bald rounded scalp, prominent brow ridge, brown eyes, thick dark eyebrows, compact broad facial structure, broad nose and strong bridge, close full dark brown beard and connected moustache with subtle warm lighter beard flecks, prominent wrestler ears. Use the real photo's facial proportions.\nStyle: match provided style reference's polished 16-bit fighting game portrait, deliberate square pixel clusters, crisp stepped contours, dark warm contour accents, limited warm skin palette with strong peach highlights, rust midtones and deep brown shadows, simplified dark beard mass with selective square texture. Pixel art, not smooth painting or vector. Readable silhouette and strong facial contrast for a 22–24px dark sidebar icon. Prioritize bold feature masses over tiny noise.\nOutput: square PNG with actual transparent background. Single head cutout. No text, border, frame, watermark, props, hats, headband, invented accessories or tattoos. Do not copy the style reference face or headband."
+      }
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Alexander Volkanovski. The user explicitly assigned one Codex/Herdr instance per fighter; you own only this fighter. Do not start subagents. Do not edit Herdr config, other fighter folders, or install assets in the app. Your output folder is /Users/tawfiqabubaker/Documents/herdr-fighter-icons/volkanovski.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use the built-in image_gen tool. If unavailable, report that blocker; do not substitute SVG drawings, canvas, Python drawing, or an API image model. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's face. Inspect the reference with view_image if needed. Research actual reference photos online to get this fighter's likeness and distinctive details right. Do not invent cultural accessories or tattoos. Prefer an accessory actually worn in face-offs if verified; otherwise use distinctive natural features. Suggested detail: his shaved head and beard.\n\nAssigned unique angle: near frontal turned 15 degrees right with chin slightly raised. Tight head crop so face fills the icon, minimum neck/shoulders, neutral or focused expression, mouth closed, no tongue. Match the reference's polished 16-bit pixel art, deliberate square pixel clusters, limited palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22–24px in a dark sidebar. No text, border or watermark. Use transparent_background true. Generate only ONE initial image, inspect it, and regenerate only if it substantially misses the requirements. Copy the generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/volkanovski/portrait.png, leaving the original generated file in place.\n\nWrite /Users/tawfiqabubaker/Documents/herdr-fighter-icons/volkanovski/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and any limitations. Send a short completion or blocker report to parent with hc send t1n. Stay available for revisions. This task authorizes generating this one portrait now; no further user confirmation needed."
+  },
+  "khabib": {
+    "result": {
+      "name": "Khabib Nurmagomedov",
+      "angle": "Left-facing three-quarter view, approximately 30 degrees",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/khabib/portrait.png",
+      "chosen_distinctive_details": [
+        "Cream-white curly sheepskin papakha",
+        "Short dense dark beard with minimal moustache",
+        "Thick dark eyebrows and focused brown eyes",
+        "Closed mouth, compact strong facial structure"
+      ],
+      "source_reference_urls": [
+        "https://www.ufc.com/news/ufc-254-scorecard-khabib-whittaker-murphy-hawes-maverick",
+        "https://dmxg5wxfqgb4u.cloudfront.net/styles/card/s3/2020-10/UFC254KhabibPortraitHero.jpg?itok=uoYWRRTY"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "generation": {
+        "tool": "built-in image_gen",
+        "initial_images": 1,
+        "regenerations": 0,
+        "original": "/Users/tawfiqabubaker/.codex/generated_images/01a1d0a0-5adb-7933-801a-d9dc3ebd6fb9/exec-33dd3e2b-e06a-4b84-9de1-cce7a8fb1e4c.png",
+        "prompt": "Use case: stylized-concept.\nCreate ONE polished 16-bit pixel-art sidebar portrait of Khabib Nurmagomedov.\nInput references: the supplied pixel-art head is STYLE ONLY, never copy that person's identity, headband, or pose. The UFC photograph is IDENTITY and white papakha reference only, not its belt/body/background.\nSubject: accurate recognizable Khabib likeness: broad compact face, thick dark eyebrows, brown eyes, strong slightly prominent nose, characteristic short dense dark brown beard along jaw/chin, minimal moustache, closed mouth, calm focused expression. His verified cream-white curly sheepskin papakha is the only accessory.\nComposition: square isolated head portrait, LEFT-FACING three-quarter angle about 30 degrees from frontal, nose points toward the LEFT edge of image, both eyes visible. Tight crop, face occupies most of icon; only a tiny neck sliver, no shoulders. Keep whole hat within frame but compress its volume enough to prioritize a large clearly visible face beneath it. Center balanced silhouette fills 90-95% of square with small safe margin.\nStyle: closely match the supplied approved polished pixel art: deliberate hard-edged square pixel clusters, stepped contours, controlled limited warm skin palette, deep brown outlines and shadows, strong highlights, high contrast, richly sculpted facial planes. Cream and warm grey pixel clusters suggest wool, no fuzzy photoreal hairs. Face and silhouette must read well when reduced to 22-24px on dark sidebar. Crisp pixel-art finish, no smooth illustration or antialias blur.\nBackdrop: true transparent alpha, no background panel, no cast shadow.\nNo text, border, watermark, cigarette, tongue, headband, tattoos, belt, jewelry, unrelated objects or extra portraits. One image only."
+      },
+      "limitations": [
+        "Stylized likeness rather than an exact photographic reproduction.",
+        "Papakha remains prominent; fine facial and wool details simplify at 22–24px.",
+        "UFC article returned HTTP 403; its publicly hosted photograph was downloaded and visually inspected directly."
+      ]
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Khabib Nurmagomedov. The user explicitly requested one Codex/Herdr instance per fighter. You own only this fighter. Do not start subagents. Do not edit Herdr config, gallery.html, manifests, or other fighter folders. Output folder: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/khabib.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use built-in image_gen. If unavailable, report a blocker rather than substituting SVG, Python drawing, canvas, CLI or API generation. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's identity. Inspect references with view_image as required. Research actual reference photos online for accurate likeness and verified distinctive details. Do not invent cultural accessories or tattoos. Specific requested detail: his verified white papakha and characteristic short beard; prioritize visible face beneath the hat.\n\nAssigned angle: left-facing three-quarter view, about 30 degrees. Tight head crop so face fills most of the icon, minimum neck/shoulders, calm or focused expression, no tongue out. Carlos Prates MUST have a cigarette as explicitly requested, with lips holding it; everyone else should have a closed mouth. Match approved polished 16-bit pixel art, deliberate square pixel clusters, limited warm palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22-24px in a dark sidebar. Keep any hat compact enough that face remains legible. No text, border, watermark or unrelated objects. Use transparent_background true.\n\nGenerate only ONE initial image; inspect it and regenerate only if it substantially misses requirements. Copy final generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/khabib/portrait.png, preserving original. Write /Users/tawfiqabubaker/Documents/herdr-fighter-icons/khabib/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and limitations. Send completion/blocker report to parent via hc send t1n. Stay available for revisions. This task authorizes creating the portrait now; no further confirmation is needed."
+  },
+  "jiri": {
+    "result": {
+      "name": "Jiri Prochazka",
+      "angle": "Right-facing near-profile, approximately 85 degrees",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/jiri/portrait.png",
+      "chosen_distinctive_details": [
+        "Single crown topknot/antenna with light wrap",
+        "Closely shaved sides with stubble",
+        "Full dark-brown beard and connected moustache",
+        "Angular face, prominent brow, projecting nose",
+        "Focused expression, closed mouth"
+      ],
+      "source_reference_urls": [
+        "https://www.ufc.com.br/news/ufc-303-coach-conversation-pereira-vs-prochazka-2",
+        "https://www.ufc.com/images/styles/inline/s3/2023-11/GettyImages-1784541047.jpg?itok=BG0sjXED",
+        "https://www.ufc.com/video/134798"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "limitations": [
+        "Stylized likeness based on the historical UFC 295 face-off hairstyle, not a claim about current appearance.",
+        "Tiny sidebar rendering necessarily loses fine facial detail; no in-app 22–24px review was available.",
+        "Generated topknot has a curved loose tip; exact hair geometry is stylized."
+      ],
+      "generation": {
+        "mode": "built-in image_gen",
+        "initial_images": 1,
+        "regenerations": 0,
+        "transparent_background": true,
+        "original": "/Users/tawfiqabubaker/.codex/generated_images/01a1d0a0-5a4c-7eb2-be8d-32f78824c575/exec-9c5761b4-10e2-4ab1-a4ce-66604f04656f.png",
+        "prompt": "Use case: stylized-concept.\nCreate ONE polished 16-bit pixel-art sidebar portrait of Jiří Procházka, square PNG with genuinely transparent background.\nReference image 1 is STYLE ONLY: emulate its deliberate hard square pixel clusters, warm limited palette, dark contour, high contrast, detailed yet clean arcade portrait shading. Do not copy that man's identity, headband or accessories.\nReference image 2 is IDENTITY and HAIRSTYLE: Jiri is the man on the LEFT facing right in the UFC faceoff photograph. Capture his distinctive long angular face, strong projecting nose with slightly convex bridge, prominent brow, pale warm skin, closely shaved sides and back with subtle stubble, and dense full dark-brown beard and connected moustache. His signature SINGLE topknot/antenna rises from the crown, gathered narrowly upright with a small light wrap and a short brown loose tip, as shown in photo. One topknot only, no extra buns or spikes.\nComposition: right-facing near-profile at approximately 85 degrees, only near eye visible, head almost perfectly in profile. Tight head crop with whole head and compact complete antenna inside frame; face occupies most of square; very short neck stump only, no shoulders or clothing. Calm focused eye looking right, mouth completely closed.\nPixel treatment: polished hand-placed square clusters, crisp stair-step silhouette, chunky readable facial planes, warm peach highlights, ochre midtones, deep warm brown shadows, restrained small highlights on eye and nose. Beard is dark brown with a few grouped pixels, not noisy individual hairs. Prioritize unmistakable silhouette and facial readability at 22–24px on a dark sidebar. Keep head large rather than shrinking it for an oversized hair antenna.\nNo text, no border, no watermark, no props, no headband, no tattoos, no cultural accessories, no cigarette, no tongue. No smooth vector edges, no blur, no painted gradients. Transparent background, no backdrop, no shadow outside the cutout."
+      }
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Jiri Prochazka. The user explicitly requested one Codex/Herdr instance per fighter. You own only this fighter. Do not start subagents. Do not edit Herdr config, gallery.html, manifests, or other fighter folders. Output folder: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/jiri.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use built-in image_gen. If unavailable, report a blocker rather than substituting SVG, Python drawing, canvas, CLI or API generation. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's identity. Inspect references with view_image as required. Research actual reference photos online for accurate likeness and verified distinctive details. Do not invent cultural accessories or tattoos. Specific requested detail: his signature single topknot/antenna hairstyle, checked against real face-off photos.\n\nAssigned angle: right-facing near-profile, about 85 degrees. Tight head crop so face fills most of the icon, minimum neck/shoulders, calm or focused expression, no tongue out. Carlos Prates MUST have a cigarette as explicitly requested, with lips holding it; everyone else should have a closed mouth. Match approved polished 16-bit pixel art, deliberate square pixel clusters, limited warm palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22-24px in a dark sidebar. Keep any hat compact enough that face remains legible. No text, border, watermark or unrelated objects. Use transparent_background true.\n\nGenerate only ONE initial image; inspect it and regenerate only if it substantially misses requirements. Copy final generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/jiri/portrait.png, preserving original. Write /Users/tawfiqabubaker/Documents/herdr-fighter-icons/jiri/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and limitations. Send completion/blocker report to parent via hc send t1n. Stay available for revisions. This task authorizes creating the portrait now; no further confirmation is needed."
+  },
+  "omalley": {
+    "result": {
+      "name": "Sean O'Malley",
+      "angle": "Left-facing three-quarter view, approximately 45 degrees, chin slightly raised",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/omalley/portrait.png",
+      "chosen_distinctive_details": [
+        "UFC 299 pink and turquoise/cyan braided cornrows with visible scalp channels and short braid tails",
+        "Thin brown mustache, small soul patch, sparse cheek hair, fuller dark chin and lower-jaw beard",
+        "Long narrow face, prominent nose and high cheekbones",
+        "Closed mouth and calm focused expression"
+      ],
+      "source_reference_urls": [
+        {
+          "url": "https://www.nur.kz/sport/mma/2065677-razgromnaya-pobeda-pozvolila-shonu-omelli-vpervye-zaschitit-poyas-ufc/",
+          "image_url": "https://cdn.nur.kz/images/1200x675/8785dd26c152f08f.jpeg?version=1",
+          "use": "Downloaded and visually inspected close-up: identity, cornrow colors, mustache, soul patch, beard distribution."
+        },
+        {
+          "url": "https://www.ufc.com/gallery/photo-gallery-ufc-299-pictures",
+          "image_url": "https://www.ufc.com/images/styles/gallery_collapsed_mobile_1x/s3/2024-03/030924-UFC-299GettyImages-2072468642.jpg?itok=doNG9ow7",
+          "use": "Downloaded and visually inspected official UFC 299 faceoff photo confirming braided hairstyle. Gallery page returned 403."
+        }
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "generation": {
+        "tool": "built-in image_gen",
+        "initial_images": 1,
+        "regenerations": 0,
+        "original_png": "/Users/tawfiqabubaker/.codex/generated_images/01a1d0a0-5ccc-76c3-a1c3-87257406afd1/exec-2e366d13-4d3c-4f7b-91bb-c335767f6f19.png",
+        "prompt": "Use case: stylized-concept. Create ONE finished square transparent PNG sidebar portrait of Sean O'Malley, recognizable likeness.\nInputs: style-reference.png is STYLE ONLY, not identity. omalley-photo.jpg is the actual Sean O'Malley identity, hairstyle and facial hair reference. omalley-ufc.jpg confirms the UFC 299 hairstyle.\nComposition: face points LEFT toward image left, three-quarter view about 45 degrees, chin slightly raised; both eyes visible with far eye narrower. Tight head crop with entire braided crown intact, face fills most of square, only a tiny neck stump and no shoulders. Calm focused expression, CLOSED lips.\nLikeness: long narrow face, prominent long straight nose, high cheekbones, slim jaw. Precisely reference the photo's actual tightly braided scalp cornrows, vivid pink and turquoise/cyan rows with pale scalp channels and short braid ends behind the ear. Not loose curls, not an afro, not dreadlocks. Thin brown mustache, small soul patch, sparse cheek hair, substantially fuller dark brown beard around chin and lower jaw as photo; do not give a dense full cheek beard.\nStyle: match supplied approved polished 16-bit pixel-art portrait: intentional crisp square pixel clusters and stair-step edges, strong dark brown outline, warm peach/tan skin with limited warm highlight and terracotta shadow planes, high contrast, confident carefully placed pixels; no smooth painting, no blur, no vector look. Use broad facial shapes and clean silhouette so identity and colored braids remain readable at 22–24px in a dark sidebar. Pixel cluster appearance equivalent to roughly 128–160px art scaled crisply.\nConstraints: genuinely transparent background and transparent corners; no background panel, no text, no border, no watermark, no accessories, no headband, no earrings, no cigarette, no extra objects. Omit all tattoos entirely rather than invent or garble any marks. Only one portrait."
+      },
+      "validation": {
+        "width": 1254,
+        "height": 1254,
+        "format": "PNG",
+        "has_alpha": true,
+        "visual_review": "Passed composition, left-facing angle, closed mouth, colorful braids, pixel-art style and tight framing."
+      },
+      "limitations": [
+        "All tattoos intentionally omitted to avoid inventing or garbling marks.",
+        "Hairstyle represents the verified UFC 299 appearance, not a claim about current hairstyle.",
+        "Braiding and facial hair are stylized approximations; generated chin beard is slightly more voluminous than the close-up reference.",
+        "Fine detail cannot remain individually readable at 22–24px; silhouette and broad color blocks carry recognition."
+      ]
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Sean O'Malley. The user explicitly requested one Codex/Herdr instance per fighter. You own only this fighter. Do not start subagents. Do not edit Herdr config, gallery.html, manifests, or other fighter folders. Output folder: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/omalley.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use built-in image_gen. If unavailable, report a blocker rather than substituting SVG, Python drawing, canvas, CLI or API generation. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's identity. Inspect references with view_image as required. Research actual reference photos online for accurate likeness and verified distinctive details. Do not invent cultural accessories or tattoos. Specific requested detail: one actual verified colorful braided hairstyle, plus accurately referenced facial hair; no invented tattoos.\n\nAssigned angle: left-facing three-quarter view, about 45 degrees with chin slightly raised. Tight head crop so face fills most of the icon, minimum neck/shoulders, calm or focused expression, no tongue out. Carlos Prates MUST have a cigarette as explicitly requested, with lips holding it; everyone else should have a closed mouth. Match approved polished 16-bit pixel art, deliberate square pixel clusters, limited warm palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22-24px in a dark sidebar. Keep any hat compact enough that face remains legible. No text, border, watermark or unrelated objects. Use transparent_background true.\n\nGenerate only ONE initial image; inspect it and regenerate only if it substantially misses requirements. Copy final generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/omalley/portrait.png, preserving original. Write /Users/tawfiqabubaker/Documents/herdr-fighter-icons/omalley/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and limitations. Send completion/blocker report to parent via hc send t1n. Stay available for revisions. This task authorizes creating the portrait now; no further confirmation is needed."
+  },
+  "ddp": {
+    "result": {
+      "name": "Dricus du Plessis",
+      "angle": "Near frontal, approximately 15 degrees toward viewer's left, chin slightly lowered",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/ddp/portrait.png",
+      "chosen_distinctive_details": [
+        "Short ash-brown hair brushed across the top with closely faded sides",
+        "Broad forehead and strong cheek and jaw structure",
+        "Pale blue-gray eyes beneath low straight brows",
+        "Prominent broad nose",
+        "Light brown stubble with a darker chin",
+        "Focused expression and closed mouth"
+      ],
+      "source_reference_urls": [
+        "https://www.ufc.com/athlete/dricus-du-plessis",
+        "https://www.ufc.com/news/dricus-du-plessis-theres-no-man-that-can-break-me-ufc-319",
+        "https://www.ufc.com/images/styles/background_image_sm/s3/2025-08/020925-Dricus-du-Plessis-Pre-Fight-HERO-GettyImages-2198477161.jpg?h=d1cb525d&itok=Rqiytk4w"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "generator": "Built-in image_gen",
+      "generation_count": 1,
+      "original_generated_png": "/Users/tawfiqabubaker/.codex/generated_images/01a1d0a0-5b44-7d41-9f5f-6c50295e3b22/exec-f8b1fc88-e1f9-4473-97ef-ba335161f339.png",
+      "limitations": [
+        "Stylized likeness rather than an exact photographic reproduction.",
+        "Angle is visually approximated.",
+        "Fine facial details will simplify at 22–24 pixels.",
+        "UFC HTML pages returned 403; actual UFC-hosted reference photograph was downloaded and visually inspected."
+      ],
+      "final_prompt": "Use case: stylized-concept.\nCreate ONE finished square transparent PNG sidebar portrait of UFC fighter Dricus du Plessis.\nInput image 1 is STYLE ONLY: match its polished 16-bit fighting-game pixel-art craftsmanship, hard square pixel clusters, warm skin shading, dark contour and strong contrast. Do not copy that person's identity, headband, profile angle or long neck.\nInput image 2 is the actual Dricus du Plessis photo, IDENTITY reference: match his facial likeness and short hair, ignoring photographic background, shoulders, injury-related redness and lighting.\nSubject likeness: short ash-brown hair brushed across top, neatly clipped faded sides, broad forehead, fairly straight low brows, pale blue-gray eyes, broad strong cheek and jaw structure, prominent broad straight nose, compact closed lips and light short brown stubble with slightly darker chin. Focused calm expression, closed mouth.\nAngle: near frontal with head rotated only 15 degrees toward the viewer's LEFT, chin slightly lowered, both eyes clearly visible. Minimal neck, no shoulders. Tight head crop yet keep entire hair silhouette and chin intact: head fills approximately 90% of canvas height and 80% width. Face is the dominant object, designed to remain readable at 22–24px in a dark sidebar.\nStyle: deliberate visible square pixel clusters, crisp stepped edges, limited warm peach/ochre/brown palette, confident highlight planes and deep shadow shapes; elegant polished 16-bit pixel art, not blurry paint or a photograph. Sparse clustered stubble rather than noisy individual hairs. Small cool eye highlights. Strong readable silhouette.\nBackground: genuine alpha transparency, including outside silhouette; no black rectangular background, no checkerboard baked into image. No hat, headband, accessories, tattoos, costume, cigarette, text, watermark, border, frame or unrelated objects. Only this one portrait."
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Dricus du Plessis. The user explicitly requested one Codex/Herdr instance per fighter. You own only this fighter. Do not start subagents. Do not edit Herdr config, gallery.html, manifests, or other fighter folders. Output folder: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/ddp.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use built-in image_gen. If unavailable, report a blocker rather than substituting SVG, Python drawing, canvas, CLI or API generation. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's identity. Inspect references with view_image as required. Research actual reference photos online for accurate likeness and verified distinctive details. Do not invent cultural accessories or tattoos. Specific requested detail: his actual short hair, characteristic facial structure and light stubble; no invented cultural costume.\n\nAssigned angle: near frontal, 15 degrees left with chin slightly lowered. Tight head crop so face fills most of the icon, minimum neck/shoulders, calm or focused expression, no tongue out. Carlos Prates MUST have a cigarette as explicitly requested, with lips holding it; everyone else should have a closed mouth. Match approved polished 16-bit pixel art, deliberate square pixel clusters, limited warm palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22-24px in a dark sidebar. Keep any hat compact enough that face remains legible. No text, border, watermark or unrelated objects. Use transparent_background true.\n\nGenerate only ONE initial image; inspect it and regenerate only if it substantially misses requirements. Copy final generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/ddp/portrait.png, preserving original. Write /Users/tawfiqabubaker/Documents/herdr-fighter-icons/ddp/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and limitations. Send completion/blocker report to parent via hc send t1n. Stay available for revisions. This task authorizes creating the portrait now; no further confirmation is needed."
+  },
+  "yan": {
+    "result": {
+      "name": "Petr Yan",
+      "angle": "Right-facing three-quarter view, approximately 55 degrees",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/yan/portrait.png",
+      "distinctive_details": [
+        "Close short brown cropped hair with high faded sides",
+        "Broad forehead and cheekbones, low straight brows and focused narrowed eyes",
+        "Prominent straight nose with rounded tip",
+        "Compact squared jaw and close reddish-brown beard and mustache",
+        "Closed mouth, minimal neck, no accessories or tattoos"
+      ],
+      "source_reference_urls": [
+        "https://www.ufc.com/news/petr-yans-chance-to-rewrite-the-story-ufc-323",
+        "https://ufc.com/images/styles/background_image_sm/s3/2025-12/112324-Petr-Yan-HERO-GettyImages-2186473737.jpg?h=d1cb525d&itok=iT72D0wo"
+      ],
+      "local_identity_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/yan/references/petr-yan-ufc.jpg",
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "generation": {
+        "tool": "built-in image_gen",
+        "initial_images": 1,
+        "regenerations": 0,
+        "original_path": "/Users/tawfiqabubaker/.codex/generated_images/01a1d0a0-5c51-7471-a7fc-c8280add7ca5/exec-f38cb423-97e1-4492-9fe8-25156341439f.png",
+        "prompt": "Use case: stylized-concept.\nCreate ONE polished 16-bit pixel-art sidebar portrait of Petr Yan, recognizable likeness based on the actual photo reference.\nInput image 1 (/style-reference.png) is STYLE ONLY: match its deliberate square pixel clusters, crisp stair-stepped edges, warm limited colors, high contrast, carefully shaped facial planes and polished retro fighting-game portrait quality. Do NOT copy that man's identity, headband, accessories, or hairstyle.\nInput image 2 (petr-yan-ufc.jpg) is the IDENTITY reference for Petr Yan: accurately capture his close short brown hair with high faded sides and a small cropped textured top, broad forehead, low straight eyebrows, narrowed focused eyes, broad high cheekbones, compact squared jaw/chin, prominent straight nose with rounded tip, thin closed lips and close trimmed reddish-brown beard and mustache following his jaw. Preserve these distinct facial proportions, not generic fighter features.\nComposition: square transparent PNG. Head turned toward the RIGHT at about 55 degrees, a three-quarter view with near eye prominent and far eye slightly visible. Calm focused expression; lips closed. Extremely tight head portrait: hair crown almost at top, face and head fill nearly all canvas height/width with minimal padding, only a very short neck base, no shoulders. Both scalp and chin fully visible. No invented tattoos, no cultural accessories, no hat/headband, no cigarette, no text, no border, no watermark, no unrelated objects.\nStyle: warm peach and ochre skin with rich brown shadows, warm brown hair and reddish-brown close beard. Build features with deliberate visible square pixels and coherent clusters, not smooth painting or vector art; strong readable silhouette and bold light/shadow masses. Prioritize likeness and face readability when shown as a 22–24px dark-sidebar icon. Actual transparent alpha background, no drawn checkerboard, no black rectangle."
+      },
+      "limitations": [
+        "Stylized interpretation of photographic likeness; angle is approximate.",
+        "Facial texture and individual hair pixels cannot remain distinct at 22–24px; silhouette and large facial planes carry recognition.",
+        "The UFC article page returned HTTP 403 to browser retrieval; its publicly available photo was downloaded and visually inspected."
+      ]
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Petr Yan. The user explicitly requested one Codex/Herdr instance per fighter. You own only this fighter. Do not start subagents. Do not edit Herdr config, gallery.html, manifests, or other fighter folders. Output folder: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/yan.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use built-in image_gen. If unavailable, report a blocker rather than substituting SVG, Python drawing, canvas, CLI or API generation. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's identity. Inspect references with view_image as required. Research actual reference photos online for accurate likeness and verified distinctive details. Do not invent cultural accessories or tattoos. Specific requested detail: his close short hair and distinctive facial structure; reference actual photos rather than generic fighter features.\n\nAssigned angle: right-facing three-quarter view, about 55 degrees. Tight head crop so face fills most of the icon, minimum neck/shoulders, calm or focused expression, no tongue out. Carlos Prates MUST have a cigarette as explicitly requested, with lips holding it; everyone else should have a closed mouth. Match approved polished 16-bit pixel art, deliberate square pixel clusters, limited warm palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22-24px in a dark sidebar. Keep any hat compact enough that face remains legible. No text, border, watermark or unrelated objects. Use transparent_background true.\n\nGenerate only ONE initial image; inspect it and regenerate only if it substantially misses requirements. Copy final generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/yan/portrait.png, preserving original. Write /Users/tawfiqabubaker/Documents/herdr-fighter-icons/yan/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and limitations. Send completion/blocker report to parent via hc send t1n. Stay available for revisions. This task authorizes creating the portrait now; no further confirmation is needed."
+  },
+  "paddy": {
+    "result": {
+      "name": "Paddy Pimblett",
+      "angle": "Near frontal, requested 15 degrees toward image left with slight head tilt; generated turn is subtle.",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/paddy/portrait.png",
+      "distinctive_details": [
+        "Thick golden-blond rounded bowl-cut/mop-top",
+        "Full forward fringe at eyebrows and shaggy sides over ears",
+        "Fair complexion, long broad nose, lightly stubbled jaw and chin",
+        "Calm focused expression with closed mouth"
+      ],
+      "source_reference_urls": [
+        "https://heartafact.com/paddy-pimblett-hair/",
+        "https://heartafact.com/wp-content/uploads/2023/04/1-1.jpg",
+        "https://www.ufc.com/athlete/paddy-pimblett"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "generation": {
+        "tool": "built-in image_gen",
+        "initial_images": 1,
+        "regenerations": 0,
+        "transparent_background": true,
+        "original": "/Users/tawfiqabubaker/.codex/generated_images/01a1d0a0-5c57-74e3-a205-323698f60bb8/exec-6f16177f-7745-4c3c-8a36-0b4b55b105e7.png",
+        "prompt_file": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/paddy/prompt.txt"
+      },
+      "limitations": [
+        "Stylized likeness, not a photographic reproduction.",
+        "The head turn and tilt are subtle rather than a measurable exact 15 degrees.",
+        "Readability at 22–24 px is a design target; no live sidebar integration was changed or tested.",
+        "UFC athlete page was found in search but direct fetch returned HTTP 403; the downloaded Heartafact portrait was visually inspected for likeness."
+      ]
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Paddy Pimblett. The user explicitly requested one Codex/Herdr instance per fighter. You own only this fighter. Do not start subagents. Do not edit Herdr config, gallery.html, manifests, or other fighter folders. Output folder: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/paddy.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use built-in image_gen. If unavailable, report a blocker rather than substituting SVG, Python drawing, canvas, CLI or API generation. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's identity. Inspect references with view_image as required. Research actual reference photos online for accurate likeness and verified distinctive details. Do not invent cultural accessories or tattoos. Specific requested detail: his unmistakable blond bowl-cut hairstyle, accurately referenced.\n\nAssigned angle: near frontal, 15 degrees left with a slight head tilt. Tight head crop so face fills most of the icon, minimum neck/shoulders, calm or focused expression, no tongue out. Carlos Prates MUST have a cigarette as explicitly requested, with lips holding it; everyone else should have a closed mouth. Match approved polished 16-bit pixel art, deliberate square pixel clusters, limited warm palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22-24px in a dark sidebar. Keep any hat compact enough that face remains legible. No text, border, watermark or unrelated objects. Use transparent_background true.\n\nGenerate only ONE initial image; inspect it and regenerate only if it substantially misses requirements. Copy final generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/paddy/portrait.png, preserving original. Write /Users/tawfiqabubaker/Documents/herdr-fighter-icons/paddy/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and limitations. Send completion/blocker report to parent via hc send t1n. Stay available for revisions. This task authorizes creating the portrait now; no further confirmation is needed.",
+    "prompt_file": "Use case: stylized-concept.\nCreate ONE polished 16-bit pixel-art sidebar portrait of Paddy Pimblett.\nInput images: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png is STYLE ONLY, depicting another person: borrow deliberate square pixel clusters, stepped contours, warm skin shading and high contrast; do not borrow identity, haircut, headband or accessories. /tmp/paddy-photo.jpg is Paddy Pimblett's IDENTITY AND HAIR reference.\nSubject: recognizable Paddy Pimblett, fair skin, unmistakable thick golden-blond bowl-cut/mop-top with a rounded crown, full forward fringe reaching eyebrows and shaggy sides covering ears, slightly longer ends behind ears. Match reference facial proportions: long broad nose, heavy-lidded eyes, broad lower cheeks and defined chin, closed natural lips, very light chin/jaw stubble, no full beard.\nComposition: square transparent PNG cutout; near frontal face turned only 15 degrees toward image left, slight natural head tilt. Both eyes clearly visible. Tight full-head crop with only a tiny amount of neck, no shoulders; head fills almost entire icon while full hair silhouette remains inside frame. Calm focused expression, mouth closed, no tongue.\nStyle: match supplied approved polished arcade 16-bit pixel portrait, visibly deliberate square pixel clusters and crisp block edges; limited warm golden-blond, peach, terracotta and deep brown palette. Strong readable face planes, restrained texture, clean silhouette legible at 22–24 pixels on a dark sidebar. No smooth painterly strokes or photorealistic skin. Use an approximately 128-pixel logical grid enlarged crisply.\nBackground: genuinely transparent alpha, no backdrop, no shadow outside silhouette.\nAvoid: text, border, watermark, headband, hat, cigarette, jewelry, cultural accessories, tattoos, extra objects, torso, open mouth. Output one portrait only.\n"
+  },
+  "prates": {
+    "result": {
+      "name": "Carlos Prates",
+      "angle": "Left-facing near-profile, approximately 75 degrees",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/prates/portrait.png",
+      "chosen_distinctive_details": [
+        "Short dark curly crop with faded sides",
+        "Warm tan complexion, prominent nose, thick lips and sparse moustache/jaw stubble",
+        "Verified ornamental temple tattoo placement above and in front of visible ear",
+        "Slim white cigarette held between lips with tan filter and small glowing tip, explicitly requested"
+      ],
+      "source_reference_urls": [
+        "https://www.ufc.com/news/journey-main-event-carlos-prates-ufc-vegas-100",
+        "https://ufc.com/images/styles/background_image_sm/s3/2024-11/110724-Carlos-Prates-Hero-GettyImages-2001246916.jpg?h=d1cb525d&itok=AozpLU0q",
+        "https://www.ufc.com/news/carlos-prates-is-just-getting-started-ufc-kansas-city",
+        "https://ufc.com/images/styles/background_image_sm/s3/2025-04/042225-Carlos-Prates-HERO.jpg?h=d1cb525d&itok=aVoslspU"
+      ],
+      "limitations": [
+        "Stylized likeness, not an exact photographic reproduction.",
+        "Temple tattoo ornament is simplified; precise lettering is not reproduced or verified at pixel scale.",
+        "UFC article pages returned HTTP 403; their reference image files were downloaded and visually inspected.",
+        "Legibility at 22–24px depends on the consuming application's scaling; no consuming application was modified."
+      ],
+      "generation": {
+        "tool": "Built-in image_gen",
+        "initial_images": 1,
+        "regenerations": 0,
+        "transparent_background": true,
+        "original": "/Users/tawfiqabubaker/.codex/generated_images/01a1d0a0-5e40-7582-9fc6-f3ea696e3849/exec-7ff35a48-74dc-4a91-a5c1-40276a0647ff.png",
+        "prompt": "Use case: stylized-concept\nAsset type: one polished pixel-art fighter head icon for a dark sidebar.\nGenerate ONE square transparent PNG portrait of Carlos Prates.\nInput images: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png is STYLE ONLY, a different fighter: match its polished 16-bit rendering, intentional square pixel clusters, stepped contours, warm limited palette, bold deep brown outlines and sculpted highlights. DO NOT copy its headband or identity. /private/tmp/prates-reference.jpg and /private/tmp/prates-front-reference.jpg are actual Carlos Prates likeness references. Preserve his identity from these photos.\nSubject: adult Brazilian UFC fighter Carlos Prates, short dark curly crop on top with closely faded sides, warm medium tan skin, long angular face, prominent nose, thick lips, dark eyebrows, sparse light moustache and chin/jaw stubble (not a full beard). His large dark ornamental script tattoo is visibly around the near temple above and in front of the ear, as verified in photos. Render its verified placement and ornamental silhouette with economical pixel marks, without trying to add readable text. Only a tiny top of neck may show; omit cropped neck designs rather than inventing tattoos.\nComposition: faces LEFT at approximately 75 degrees near-profile, near ear visible on right, one dominant eye with minimal far side. Tight head crop: head fills almost entire square with just enough transparent margin to preserve all contours. Minimal neck, no shoulder bust. Nose points toward left edge. Calm focused expression, lips holding a clearly readable slim white cigarette projecting LEFT from the lips, small tan filter at lips and tiny ember at tip. No tongue, no open shouting mouth. Cigarette is required. No smoke needed.\nStyle: polished classic 16-bit pixel portrait consistent with supplied style reference; crisp deliberate square pixel clusters, hard pixel edges, bold readable silhouette, warm peach/ochre highlights and rich brown shadows; concentrated high contrast so face and cigarette stay legible at 22–24px. No soft digital painting, blur, noisy photo texture, or gradients.\nBackground: genuine transparency.\nConstraints: exactly one head, no hat, no cultural accessories, no jewelry, no headband. No text/captions, border, frame, watermark or unrelated objects. Existing tattoo represented only as verified ornamental pixel shapes, no invented symbols."
+      }
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Carlos Prates. The user explicitly requested one Codex/Herdr instance per fighter. You own only this fighter. Do not start subagents. Do not edit Herdr config, gallery.html, manifests, or other fighter folders. Output folder: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/prates.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use built-in image_gen. If unavailable, report a blocker rather than substituting SVG, Python drawing, canvas, CLI or API generation. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's identity. Inspect references with view_image as required. Research actual reference photos online for accurate likeness and verified distinctive details. Do not invent cultural accessories or tattoos. Specific requested detail: the user explicitly requests a cigarette between his lips; include a clearly readable slim cigarette, optionally a tiny wisp of smoke, plus his actual hair/facial hair and only verified visible tattoos.\n\nAssigned angle: left-facing near-profile, about 75 degrees. Tight head crop so face fills most of the icon, minimum neck/shoulders, calm or focused expression, no tongue out. Carlos Prates MUST have a cigarette as explicitly requested, with lips holding it; everyone else should have a closed mouth. Match approved polished 16-bit pixel art, deliberate square pixel clusters, limited warm palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22-24px in a dark sidebar. Keep any hat compact enough that face remains legible. No text, border, watermark or unrelated objects. Use transparent_background true.\n\nGenerate only ONE initial image; inspect it and regenerate only if it substantially misses requirements. Copy final generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/prates/portrait.png, preserving original. Write /Users/tawfiqabubaker/Documents/herdr-fighter-icons/prates/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and limitations. Send completion/blocker report to parent via hc send t1n. Stay available for revisions. This task authorizes creating the portrait now; no further confirmation is needed."
+  },
+  "belal": {
+    "result": {
+      "name": "Belal Muhammad",
+      "angle": "Right-facing three-quarter view, approximately 25 degrees from frontal, chin slightly raised",
+      "portrait": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/belal/portrait.png",
+      "chosen_distinctive_details": [
+        "Dense full dark beard with rounded lower silhouette and connected moustache",
+        "Short dark cropped textured haircut with faded sides",
+        "Strong thick eyebrows",
+        "Prominent rounded nose and warm olive-tan complexion",
+        "Calm focused expression with closed mouth"
+      ],
+      "source_reference_urls": [
+        "https://commons.wikimedia.org/wiki/File:Belal_Muhammad_UFC_(cropped).jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/16/Belal_Muhammad_UFC_%28cropped%29.jpg",
+        "https://www.tv-media.at/personen/belal-muhammad",
+        "https://files.fairu.app/97654e41-5652-4149-ba2e-e13ec5491bd9/belal-muhammad-photo-678f8565d8999.jpg"
+      ],
+      "style_reference": "/Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png",
+      "generation_method": "Built-in image_gen",
+      "generated_original": "/Users/tawfiqabubaker/.codex/generated_images/01a1d0a0-5c7b-76f2-880f-902107a83b88/exec-89ed61b4-8d7d-49ba-9cfb-dad0315ea62a.png",
+      "initial_images_generated": 1,
+      "regenerations": 0,
+      "prompt": "Use case: stylized-concept.\nCreate ONE polished pixel-art sidebar portrait of Belal Muhammad, the MMA fighter, on a genuinely transparent square background.\nReferences visible in conversation: the pixel-art fighter wearing a headband is STYLE ONLY; do not copy his identity, headband, stubble, or long neck. The two photographs depict the actual Belal Muhammad and are identity references, especially the serious studio portrait.\nLikeness: Belal's distinctive dense full near-black beard, full rounded lower beard silhouette extending below his chin, connected dark moustache, short dark cropped textured haircut with faded sides, strong thick dark eyebrows, brown eyes, prominent rounded nose, warm olive-tan skin. Use the actual studio photo facial proportions and hair/beard silhouette; recognizable Belal, not a generic fighter.\nPose: turn his face toward the viewer's RIGHT approximately 25 degrees from frontal, three-quarter view with both eyes visible; chin slightly raised. Calm focused expression, closed lips.\nComposition: extremely tight head crop, face and hair/beard occupy almost the entire square with just a short neck stub, minimal or no shoulders. Entire head silhouette fits with a narrow transparent margin. Large readable facial masses, strong silhouette and contrast for a dark sidebar at 22–24 px.\nStyle: match the approved reference's polished 16-bit arcade portrait, deliberate crisp square pixel clusters, stepped edges, limited warm palette of tan, ochre, copper, brown, deep brown-black, restrained highlights. A coherent coarse pixel grid akin to a 128px sprite enlarged with nearest-neighbor. Sculpt the facial planes in broad clusters and add only controlled pixel texture to beard/hair. Avoid smooth painting, photorealism, gradients, soft edges and fine noisy microdetail.\nConstraints: one head only. Transparent alpha background. No headband, hat, cultural accessories, tattoos, cigarette, jewelry, text, border, frame, watermark, props or unrelated objects. No tongue, no open mouth. Preserve likeness while using chunky pixel art.",
+      "limitations": [
+        "Stylized interpretation; exact likeness and pose angle are approximate.",
+        "Fine facial details simplify at 22–24px; no sidebar integration was performed.",
+        "Official UFC athlete page returned HTTP 403; the two listed photo files were downloaded and visually inspected.",
+        "Wikimedia photograph is credited to Inaquout under CC BY-SA 4.0; see the source page. Photos served as likeness research only."
+      ]
+    },
+    "task": "Create ONE polished pixel-art sidebar portrait of Belal Muhammad. The user explicitly requested one Codex/Herdr instance per fighter. You own only this fighter. Do not start subagents. Do not edit Herdr config, gallery.html, manifests, or other fighter folders. Output folder: /Users/tawfiqabubaker/Documents/herdr-fighter-icons/belal.\n\nRead /Users/tawfiqabubaker/.codex/skills/.system/imagegen/SKILL.md and use built-in image_gen. If unavailable, report a blocker rather than substituting SVG, Python drawing, canvas, CLI or API generation. The attached image and /Users/tawfiqabubaker/Documents/herdr-fighter-icons/style-reference.png are STYLE reference only, not this fighter's identity. Inspect references with view_image as required. Research actual reference photos online for accurate likeness and verified distinctive details. Do not invent cultural accessories or tattoos. Specific requested detail: his distinctive dark beard, haircut and strong eyebrows; reference actual photos.\n\nAssigned angle: right-facing three-quarter view, about 25 degrees with chin slightly raised. Tight head crop so face fills most of the icon, minimum neck/shoulders, calm or focused expression, no tongue out. Carlos Prates MUST have a cigarette as explicitly requested, with lips holding it; everyone else should have a closed mouth. Match approved polished 16-bit pixel art, deliberate square pixel clusters, limited warm palette, readable silhouette, high contrast. Square transparent PNG, face legible at 22-24px in a dark sidebar. Keep any hat compact enough that face remains legible. No text, border, watermark or unrelated objects. Use transparent_background true.\n\nGenerate only ONE initial image; inspect it and regenerate only if it substantially misses requirements. Copy final generated PNG to /Users/tawfiqabubaker/Documents/herdr-fighter-icons/belal/portrait.png, preserving original. Write /Users/tawfiqabubaker/Documents/herdr-fighter-icons/belal/result.json with name, angle, portrait absolute path, chosen distinctive details, source reference URLs and limitations. Send completion/blocker report to parent via hc send t1n. Stay available for revisions. This task authorizes creating the portrait now; no further confirmation is needed."
+  }
+}

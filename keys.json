@@ -14,7 +14,7 @@
     "cmd-]": "agent.next",
     "cmd-[": "agent.prev",
     "cmd-shift-l": "pane.go:right",
-    "cmd-n": "space.new",
+    "cmd-n": "tab.next",
     "cmd-p": "tab.prev",
     "cmd-shift-p": "app.palette",
     "cmd-,": "app.settings",
@@ -63,12 +63,13 @@
     "cmd-shift-k": "pane.go:up",
     "cmd-alt-shift-l": "layout.switch",
     "cmd-shift-z": "pane.zoom",
-    "cmd-shift-n": "space.next",
+    "cmd-shift-n": "space.new",
     "cmd-j": "space.next",
     "cmd-k": "space.prev",
     "cmd-shift-r": "space.rename",
-    "cmd-l": "tab.next",
-    "cmd-g": "mod.open:picker"
+    "cmd-l": "tab.prev",
+    "cmd-g": "mod.open:picker",
+    "cmd-r": "tab.next"
   },
   "terminal": {
     "cmd-f": "terminal.search",
@@ -82,7 +83,7 @@
     "cmd-right": "send:\u0005",
     "cmd-backspace": "send:\u0015"
   },
-  "layout:bigT": {
+  "layout:UFCisco": {
     "cmd-w": "tabs-indexed.confirm-close"
   }
 }

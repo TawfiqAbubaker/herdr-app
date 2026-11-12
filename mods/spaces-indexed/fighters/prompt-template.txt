@@ -1,0 +1,20 @@
+UFC pixel-art sidebar portrait — reusable template
+
+Create ONE polished pixel-art portrait of [FIGHTER NAME].
+
+References:
+- Use fighters/pereira.png as STYLE ONLY: match its pixel rendering and palette, not its identity, headband or pose.
+- Inspect actual photographs of this fighter for likeness and any accessory. Record source URLs. Do not invent tattoos, cultural accessories or symbols.
+
+Composition:
+[FACE ANGLE AND DIRECTION]. Tight head crop, face filling most of the square, minimal neck and shoulders, a small safe transparent margin around the silhouette. Keep hats compact enough that the face stays readable. [EXPRESSION; default calm/focused, closed mouth]. [VERIFIED ACCESSORY OR EXPLICITLY REQUESTED DETAIL].
+
+Style:
+Polished classic 16-bit fighting-game portrait, deliberate crisp square pixel clusters, stepped edges, limited warm palette, sculpted highlights and deep shadows, strong readable silhouette. Prioritize recognition at 22–24px in a dark sidebar. Avoid blur and smooth photographic/painterly rendering.
+
+Output:
+One square PNG with genuine alpha transparency. Use image_gen with transparent_background=true. No text, border, frame, watermark or unrelated objects. Inspect the result, save the selected PNG alongside the project assets, and retain the original generation.
+
+For a batch, assign different face angles. Use each fighter's natural features when no verified distinctive accessory fits. Explicit details override defaults, e.g. Carlos Prates holding a cigarette.
+
+This is a reusable synthesis of the common brief. Exact batch task briefs, generation prompts, source URLs and limitations are preserved separately in generation-archive.json.
