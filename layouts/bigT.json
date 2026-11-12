@@ -101,7 +101,7 @@
                       "mod": "pane"
                     },
                     "reveal": "always",
-                    "height": 30,
+                    "height": 24,
                     "position": "top"
                   },
                   "background": "background",
