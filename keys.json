@@ -65,7 +65,8 @@
     "cmd-shift-z": "pane.zoom",
     "cmd-shift-n": "space.next",
     "cmd-j": "space.next",
-    "cmd-k": "space.prev"
+    "cmd-k": "space.prev",
+    "cmd-shift-r": "space.rename"
   },
   "terminal": {
     "cmd-f": "terminal.search",
