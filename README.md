@@ -5,7 +5,7 @@ This repository lives at `~/.config/herdr-app`, the folder Herdr reads directly.
 ## Tracked files
 
 - `keys.json` — personal keyboard shortcuts
-- `layouts/main-indexed.json` — custom layout
+- `layouts/bigT.json` — custom layout
 - `mods/spaces-indexed/` — numbered Spaces sidebar
 - `mods/tabs-indexed/` — tab indices and keyboard prompts
 

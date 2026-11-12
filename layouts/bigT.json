@@ -1,7 +1,7 @@
 {
   "id": "root",
   "cloned_from": {
-    "name": "main",
+    "name": "main-indexed",
     "version": "0.1.15"
   },
   "type": "row",
@@ -164,7 +164,8 @@
           },
           "size": {
             "px": 28
-          }
+          },
+          "hidden": true
         }
       ],
       "resizable": false
