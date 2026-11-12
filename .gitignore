@@ -33,5 +33,5 @@
 /mods/ufc-chrome/*
 !/mods/ufc-chrome/main.js
 !/mods/ufc-chrome/mod.json
-!/mods/ufc-chrome/ufc.svg
+!/mods/ufc-chrome/*.svg
 /mods/agents-fighters/*.d.ts
