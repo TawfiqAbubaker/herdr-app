@@ -76,7 +76,7 @@
     "cmd-right": "send:\u0005",
     "cmd-backspace": "send:\u0015"
   },
-  "layout:main-indexed": {
+  "layout:bigT": {
     "cmd-w": "tabs-indexed.confirm-close"
   }
 }
