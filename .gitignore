@@ -5,7 +5,7 @@
 !/keys.json
 !/layouts/
 /layouts/*
-!/layouts/bigT.json
+!/layouts/UFCisco.json
 !/mods/
 /mods/*
 !/mods/spaces-indexed/
@@ -20,3 +20,18 @@
 !/mods/tabs-indexed/mod.json
 !/mods/tabs-indexed/jsconfig.json
 !/mods/tabs-indexed/*.svg
+
+!/mods/spaces-indexed/fighters.js
+!/mods/spaces-indexed/*.png
+!/mods/spaces-indexed/fighters/
+!/mods/spaces-indexed/space-menus.js
+!/mods/agents-fighters/
+!/mods/spaces-indexed/country-wash.js
+!/mods/spaces-indexed/flag-controls.js
+
+!/mods/ufc-chrome/
+/mods/ufc-chrome/*
+!/mods/ufc-chrome/main.js
+!/mods/ufc-chrome/mod.json
+!/mods/ufc-chrome/ufc.svg
+/mods/agents-fighters/*.d.ts

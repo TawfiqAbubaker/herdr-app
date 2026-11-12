@@ -1,7 +1,7 @@
 {
   "id": "root",
   "cloned_from": {
-    "name": "main-indexed",
+    "name": "bigT",
     "version": "0.1.15"
   },
   "type": "row",
@@ -14,10 +14,10 @@
           "id": "brand",
           "type": "block",
           "content": {
-            "mod": "workspace-chrome"
+            "mod": "ufc-chrome"
           },
           "size": {
-            "px": 46
+            "px": 34
           },
           "window_drag": true
         },
@@ -40,7 +40,7 @@
               "id": "agents",
               "type": "block",
               "content": {
-                "mod": "agents"
+                "mod": "agents-fighters"
               },
               "size": {
                 "weight": 1
@@ -79,10 +79,10 @@
           "id": "tabs",
           "type": "block",
           "content": {
-            "mod": "tabs-indexed"
+            "mod": "session-search-tabs"
           },
           "size": {
-            "px": 42
+            "px": 34
           },
           "window_drag": true
         },
@@ -173,8 +173,8 @@
   ],
   "background": "canvas",
   "terminal_padding": [
-    14,
-    12
+    6,
+    6
   ],
   "divider": {
     "width": 1,
@@ -183,6 +183,6 @@
   "titlebar": "none",
   "traffic_lights": [
     12,
-    16
+    10
   ]
 }
