@@ -464,7 +464,7 @@ export default class Spaces extends View {
           .gap(5)
           .items_center()
           // Match spaces() order, the same 1-based order used by ctrl+1..9.
-          .when(i < 9, el => el.child(div().w(14).flex_none().text_size(10).text_color(t.dim).child(String(i + 1))))
+          .when(i < 9, el => el.child(div().w(14).flex_none().font_family("Arial").font_weight(900).italic().text_size(13).text_color(w.active ? "#F5C542" : "#D20A0A").child(String(i + 1))))
           .when(Boolean(tree), el => el.pl(22).child(svg("mods/workspace-chrome/branch.svg").size(13).text_color(t.dim)))
           .child(image(fighter.icon).size(22).flex_none())
           .child(div().flex_shrink(0).max_w(150).truncate().text_color(t.foreground).child(w.name))
@@ -490,7 +490,7 @@ export default class Spaces extends View {
       .on_click(() => run("space.select", { id: w.id }))
       .child(div().relative().size(24).flex_none()
         .child(image(fighter.icon).size(24))
-        .when(i < 9, el => el.child(div().absolute().left(-1).top(-1).size(11).rounded(6).border_1().border_color(t.chrome).bg(t.selected).items_center().justify_center().text_size(7).font_bold().text_color(t.foreground).child(String(i + 1)))))
+        .when(i < 9, el => el.child(div().absolute().left(-1).top(-1).size(11).rounded(6).border_1().border_color(t.chrome).bg(t.selected).items_center().justify_center().text_size(8).font_family("Arial").font_weight(900).italic().text_color(w.active ? "#F5C542" : "#D20A0A").child(String(i + 1)))))
       .child(div().absolute().right(5).text_color(tone(t, w.status)).child(glyph(w.status))));
   }
 
