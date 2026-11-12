@@ -448,7 +448,7 @@ export default class Spaces extends View {
       .on_mouse_down("right", () => this.menu(w))
       .child(
         h_flex()
-          .gap(9)
+          .gap(5)
           .items_center()
           // Match spaces() order, the same 1-based order used by ctrl+1..9.
           .when(i < 9, el => el.child(div().w(14).flex_none().text_size(10).text_color(t.dim).child(String(i + 1))))
