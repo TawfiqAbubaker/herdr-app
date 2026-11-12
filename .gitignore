@@ -1,0 +1,21 @@
+# Track only personal Herdr settings and custom clones; ignore app state/defaults.
+/*
+!/.gitignore
+!/README.md
+!/keys.json
+!/layouts/
+/layouts/*
+!/layouts/main-indexed.json
+!/mods/
+/mods/*
+!/mods/spaces-indexed/
+/mods/spaces-indexed/*
+!/mods/spaces-indexed/main.js
+!/mods/spaces-indexed/mod.json
+!/mods/spaces-indexed/jsconfig.json
+!/mods/tabs-indexed/
+/mods/tabs-indexed/*
+!/mods/tabs-indexed/main.js
+!/mods/tabs-indexed/mod.json
+!/mods/tabs-indexed/jsconfig.json
+!/mods/tabs-indexed/*.svg
