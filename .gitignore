@@ -13,6 +13,7 @@
 !/mods/spaces-indexed/main.js
 !/mods/spaces-indexed/mod.json
 !/mods/spaces-indexed/jsconfig.json
+!/mods/spaces-indexed/*.svg
 !/mods/tabs-indexed/
 /mods/tabs-indexed/*
 !/mods/tabs-indexed/main.js
