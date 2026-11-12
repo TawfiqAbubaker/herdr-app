@@ -15,7 +15,7 @@
     "cmd-[": "agent.prev",
     "cmd-shift-l": "pane.go:right",
     "cmd-n": "space.new",
-    "cmd-p": "mod.open:picker",
+    "cmd-p": "tab.prev",
     "cmd-shift-p": "app.palette",
     "cmd-,": "app.settings",
     "cmd-d": "pane.split:right",
@@ -67,7 +67,8 @@
     "cmd-j": "space.next",
     "cmd-k": "space.prev",
     "cmd-shift-r": "space.rename",
-    "cmd-l": "tab.next"
+    "cmd-l": "tab.next",
+    "cmd-g": "mod.open:picker"
   },
   "terminal": {
     "cmd-f": "terminal.search",
