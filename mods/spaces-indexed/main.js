@@ -3,7 +3,7 @@
 // its first terminal is in now, only where unusual: branch, ahead/behind. Agent state lives in the agents list, not here. Click to
 // switch, right-click for its menu, drag to reorder.
 
-import { View, div, svg } from "gpui-kit";
+import { View, div, svg, image } from "gpui-kit";
 import { v_flex, h_flex } from "gpui-base";
 import { spaces, machines, panes, run, openOverlay, exec, hc, theme, shared, setShared, watchFolder, window, layout, nextCommand } from "herdr";
 
@@ -37,6 +37,17 @@ const FALLBACK = 60000;
 // What a stored color name looks like on an avatar (the same in every mod
 // that draws space avatars): one strong color per hue, light and dark alike.
 const MARK = { ansi6: "#22a99a", ansi3: "#e3814f", ansi4: "#5b8def", ansi5: "#8b7cf6", ansi2: "#3fae6a", ansi1: "#d9649a" };
+const FIGHTERS = [
+  { name: "Conor McGregor", icon: "mods/spaces-indexed/fighter-01-conor.svg" },
+  { name: "Khabib Nurmagomedov", icon: "mods/spaces-indexed/fighter-02-khabib.svg" },
+  { name: "Jon Jones", icon: "mods/spaces-indexed/fighter-03-jon-jones.svg" },
+  { name: "Amanda Nunes", icon: "mods/spaces-indexed/fighter-04-amanda.svg" },
+  { name: "Israel Adesanya", icon: "mods/spaces-indexed/fighter-05-israel.svg" },
+  { name: "Alex Pereira", icon: "mods/spaces-indexed/fighter-06-alex.svg" },
+  { name: "Ronda Rousey", icon: "mods/spaces-indexed/fighter-07-ronda.svg" },
+  { name: "Valentina Shevchenko", icon: "mods/spaces-indexed/fighter-08-valentina.svg" },
+  { name: "Charles Oliveira", icon: "mods/spaces-indexed/fighter-09-charles.svg" },
+];
 
 // A space speaks up only when something in it needs you.
 export function glyph(status) {
@@ -406,6 +417,7 @@ export default class Spaces extends View {
     const colors = shared("space.colors") ?? {};
     const color = colors[w.id] ?? "ansi6";
     const fill = color.startsWith("#") ? color : (MARK[color] ?? t[color]);
+    const fighter = FIGHTERS[i % FIGHTERS.length];
     return v_flex()
       .relative()
       .id(`space-${w.id}`)
@@ -453,13 +465,14 @@ export default class Spaces extends View {
           // Match spaces() order, the same 1-based order used by ctrl+1..9.
           .when(i < 9, el => el.child(div().w(14).flex_none().text_size(10).text_color(t.dim).child(String(i + 1))))
           .when(Boolean(tree), el => el.pl(22).child(svg("mods/workspace-chrome/branch.svg").size(13).text_color(t.dim)))
-          .when(!tree, el => el.child(h_flex().size(18).flex_none().rounded(5).bg(fill).items_center().justify_center().text_size(10.5).font_bold().text_color("#ffffff").child([...w.name][0]?.toUpperCase() ?? "?")))
+          .child(image(fighter.icon).size(22).flex_none().tooltip(fighter.name))
           .child(div().flex_shrink(0).max_w(150).truncate().text_color(t.foreground).child(w.name))
           .child(g ? this.gitTail(g, tree, w.name, t) : div().flex_1()),
       );
   }
 
   compact({ w, i }, t) {
+    const fighter = FIGHTERS[i % FIGHTERS.length];
     return railCell(h_flex()
       .id(`space-${w.id}`)
       .relative()
@@ -471,7 +484,9 @@ export default class Spaces extends View {
       .when(w.active, (el) => el.bg(t.selected))
       .when(!w.active, (el) => el.hover((s) => s.bg(t.hover)))
       .on_click(() => run("space.select", { id: w.id }))
-      .child(div().text_color(w.active ? t.foreground : t.muted).child(String(i + 1)))
+      .child(div().relative().size(24).flex_none().tooltip(fighter.name)
+        .child(image(fighter.icon).size(24))
+        .when(i < 9, el => el.child(div().absolute().left(-1).top(-1).size(11).rounded(6).border_1().border_color(t.chrome).bg(t.selected).items_center().justify_center().text_size(7).font_bold().text_color(t.foreground).child(String(i + 1)))))
       .child(div().absolute().right(5).text_color(tone(t, w.status)).child(glyph(w.status))));
   }
 
