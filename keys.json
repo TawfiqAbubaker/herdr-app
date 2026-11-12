@@ -63,7 +63,9 @@
     "cmd-shift-k": "pane.go:up",
     "cmd-alt-shift-l": "layout.switch",
     "cmd-shift-z": "pane.zoom",
-    "cmd-shift-n": "space.next"
+    "cmd-shift-n": "space.next",
+    "cmd-j": "space.prev",
+    "cmd-k": "space.next"
   },
   "terminal": {
     "cmd-f": "terminal.search",
