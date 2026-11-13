@@ -1,0 +1,84 @@
+{
+  "character": "Daniel Cormier",
+  "description": "Side-profile shallow push-ups: halfway-raised maximum, with belly compression at the bottom.",
+  "generation_mode": "built-in image_gen",
+  "source_sheet": "working-dc-sprites.png",
+  "animation": "working-dc.webp",
+  "prompt": "working-dc-prompt.txt",
+  "frames": 556,
+  "key_poses": 9,
+  "duration_seconds": 92.852,
+  "encoded_size": [
+    240,
+    170
+  ],
+  "display_width_px": 52,
+  "encoding": "Lossless animated WebP via img2webp; 167ms per frame, infinite loop.",
+  "crop": "1254x1254 sheet; 3x3 grid of 418px cells; identical 418x296 crop at cell x=0,y=87, scaled to 240x170.",
+  "native_playback_verified": false,
+  "playback_note": "Current Herdr image widget displays only the first frame of GIF and animated WebP. Timer fallback requested from user because AGENTS.md forbids timer-driven animation.",
+  "orientation": "Orthographic left-facing side profile",
+  "source_generation": "/Users/tawfiqabubaker/.codex/generated_images/01a1d039-47fa-7d40-b49f-6b48266b2c25/exec-7f39ae95-ba06-4862-9303-7bf4f20b6402.png",
+  "top_pose": 2,
+  "reps_per_loop": 12,
+  "frame_duration_ms": 167,
+  "top_hold_range_seconds": [
+    3.34,
+    6.68
+  ],
+  "bottom_hold_range_seconds": [
+    1.67,
+    3.34
+  ],
+  "holds_frames": [
+    [
+      25,
+      10
+    ],
+    [
+      24,
+      15
+    ],
+    [
+      40,
+      10
+    ],
+    [
+      34,
+      11
+    ],
+    [
+      36,
+      12
+    ],
+    [
+      23,
+      10
+    ],
+    [
+      32,
+      10
+    ],
+    [
+      37,
+      11
+    ],
+    [
+      39,
+      14
+    ],
+    [
+      20,
+      14
+    ],
+    [
+      35,
+      10
+    ],
+    [
+      40,
+      20
+    ]
+  ],
+  "timing_note": "Twelve preselected varied reps repeat as a single encoded loop; top and bottom holds vary independently."
+}

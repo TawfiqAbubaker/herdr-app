@@ -2,6 +2,7 @@
 
 import { View, div, image, svg } from "gpui-kit";
 import { idleScene } from "./idle-scene.js";
+import { workingScene } from "./working-scene.js";
 import { v_flex, h_flex } from "gpui-base";
 import { agents, terminals, panes, focused, spaces, run, theme, shared, setShared, setAgentOrder, openOverlay, closeOverlay, props, window, layout } from "herdr";
 
@@ -78,7 +79,7 @@ function icon(p, size, color) {
 
 export default class Agents extends View {
   init(_props, cx) {
-    if (props()?.sortMenu) return;
+    if (props()?.sortMenu || props()?.characterMenu) return;
     this.folded = new Set();
     // Each agent's last state and when it changed (ms), kept across restarts.
     this.changed = JSON.parse(localStorage.getItem("changed") ?? "{}");
@@ -131,6 +132,23 @@ export default class Agents extends View {
 
   rank(a) {
     return RANK[a.status] ?? 0;
+  }
+
+  characterMenu(t) {
+    const hidden = shared("agents.hidden-characters") ?? {};
+    return v_flex().w_full().p(5).bg(t.popover).text_size(12.8)
+      .children([["dc", "DC"], ["carlos", "Carlos"]].map(([key, name]) =>
+        div().id(`character-${key}`).h(31).px(8).rounded(7).flex().items_center()
+          .text_color(t.foreground).cursor_pointer().hover(el => el.bg(t.hover))
+          .on_click(() => {
+            setShared("agents.hidden-characters", { ...(shared("agents.hidden-characters") ?? {}), [key]: !hidden[key] });
+            closeOverlay(props().overlay);
+          })
+          .child(`${hidden[key] ? "Show" : "Hide"} ${name}`)));
+  }
+
+  openCharacterMenu() {
+    openOverlay({ mod: "agents-fighters", kind: "popup", width: 180, height: 90, props: { characterMenu: true } });
   }
 
   sortMenu(t) {
@@ -215,6 +233,8 @@ export default class Agents extends View {
   render(cx) {
     const t = theme();
     if (props()?.sortMenu) return this.sortMenu(t);
+    if (props()?.characterMenu) return this.characterMenu(t);
+    const hiddenCharacters = shared("agents.hidden-characters") ?? {};
     const collapsed = narrow();
     const sort = sortOf();
     let list = agents();
@@ -380,8 +400,23 @@ export default class Agents extends View {
     const header = (g) => {
       const open = !this.folded.has(g.id);
       const top = g.members.reduce((m, a) => ((RANK[a.status] ?? 0) > (RANK[m] ?? 0) ? a.status : m), null);
+      if (g.id === "sec-2") {
+        return h_flex().id(g.id).h(hiddenCharacters.dc ? 26 : 38).px(8).gap(6).flex_none().items_center()
+          .on_mouse_down("right", () => this.openCharacterMenu())
+          .text_size(11).cursor_pointer()
+          .on_click((_e, cx) => {
+            open ? this.folded.add(g.id) : this.folded.delete(g.id);
+            cx.notify();
+          })
+          .child(div().self_end().mb(-1).text_color(t.working).child("Working"))
+          .child(div().self_end().mb(-1).text_color(t.dim).child(String(g.members.length)))
+          .when(!hiddenCharacters.dc, el => el.child(workingScene()))
+          .child(div().flex_1())
+          .when(!open, el => el.child(svg("mods/workspace-chrome/chevron-right.svg").size(11).text_color(t.dim)));
+      }
       if (g.id === "sec-1") {
-        return h_flex().id(g.id).h(40).px(8).gap(6).flex_none().items_center()
+        return h_flex().id(g.id).h(hiddenCharacters.carlos ? 26 : 40).px(8).gap(6).flex_none().items_center()
+          .on_mouse_down("right", () => this.openCharacterMenu())
           .text_size(11).text_color(t.dim).cursor_pointer()
           .on_click((_e, cx) => {
             open ? this.folded.add(g.id) : this.folded.delete(g.id);
@@ -389,7 +424,7 @@ export default class Agents extends View {
           })
           .child(div().self_end().mb(-1).child("Idle"))
           .child(div().self_end().mb(-1).child(String(g.members.length)))
-          .child(idleScene(t))
+          .when(!hiddenCharacters.carlos, el => el.child(idleScene(t)))
           .child(div().flex_1())
           .when(!open, el => el.child(svg("mods/workspace-chrome/chevron-right.svg").size(11)));
       }
@@ -437,7 +472,8 @@ export default class Agents extends View {
             .flex_none()
             .items_center()
             .justify_between()
-            .child(div().text_size(11.5).font_medium().text_color(t.dim).child("Agents"))
+            .child(div().id("agents-character-options").text_size(11.5).font_medium().text_color(t.dim)
+              .on_mouse_down("right", () => this.openCharacterMenu()).child("Agents"))
             .child(
               div()
                 .id("ag-sort")
@@ -453,7 +489,8 @@ export default class Agents extends View {
       .when(list.length === 0 && !collapsed, (el) =>
         el.child(div().px(12).text_size(12).text_color(t.dim).child("No agent status yet. Agents show up here when they report their status. Older versions and agents inside tmux may not.")),
       )
-      .child(v_flex().id("ag-list").flex_1().min_h(0).px(collapsed ? 0 : 8).overflow_y_scrollbar().mode("always").children(rows))
+      // Extend the scroll viewport upward so DC fits without clipping his head.
+      .child(v_flex().id("ag-list").flex_1().min_h(0).when(byPriority && !collapsed && !hiddenCharacters.dc && groups[0]?.id === "sec-2", el => el.mt(-12)).px(collapsed ? 0 : 8).overflow_y_scrollbar().mode("always").children(rows))
       .when(collapsed, (el) =>
         el.child(
           h_flex()

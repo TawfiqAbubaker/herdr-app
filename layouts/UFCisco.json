@@ -111,7 +111,7 @@
                   },
                   "focus": {
                     "width": 1,
-                    "color": "accent"
+                    "color": "#B0B0A6CC"
                   },
                   "radius": 10,
                   "gap": 8,
@@ -184,5 +184,6 @@
   "traffic_lights": [
     12,
     10
-  ]
+  ],
+  "theme": "ufcgreen"
 }

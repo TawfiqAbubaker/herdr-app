@@ -1,6 +1,6 @@
 # UFCisco for Herdr
 
-A personal Herdr layout with UFC fighter portraits, random persistent space assignments, a fighter picker, global flag controls, an animated Idle illustration, compact tabs and panes, and custom macOS shortcuts.
+A personal Herdr layout with UFC fighter portraits, random persistent space assignments, a fighter picker, global flag controls, Working and Idle illustrations, compact tabs and panes, and custom macOS shortcuts.
 
 ## Requirements
 
@@ -34,7 +34,7 @@ An existing nonempty configuration folder cannot be the destination of a fresh `
 - `layouts/UFCisco.json` and `keys.json`: layout and keyboard shortcuts.
 - `mods/spaces-indexed/`: fighter artwork, random space assignments, fighter picker, and global flag controls.
 - `mods/tabs-indexed/`: compact numbered tabs and close confirmation.
-- `mods/agents-fighters/`: custom agent sidebar and animated reclining Carlos Prates.
+- `mods/agents-fighters/`: custom agent sidebar, Daniel Cormier push-up artwork, and reclining Carlos Prates.
 - `mods/ufc-chrome/`: UFC header logo.
 - Portrait prompt template and generation records under `mods/spaces-indexed/fighters/`.
 
@@ -47,3 +47,5 @@ Each installation uses its own spaces, running terminals, Codex sessions, connec
 The selected layout, flag enable/opacity preferences, and other saved UI state are local. Flags default to enabled at 3% opacity. Fonts, theme, zoom, and sounds use that installation's settings because `settings.json` is not tracked. Keyboard shortcuts are configured for macOS.
 
 Herdr-generated files, logs, sockets, shipped defaults, and generated type declarations are intentionally ignored. Edit personal mods and layouts, review with `git diff`, then commit and push to share changes.
+
+The custom `ufcgreen` theme is included under `themes/`. DC’s animated GIF/WebP assets are included, but this Herdr build displays their first frame; Carlos’s smoke uses native animation. Right-click Working, Idle, or Agents to hide or show the characters.
