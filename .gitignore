@@ -35,3 +35,7 @@
 !/mods/ufc-chrome/mod.json
 !/mods/ufc-chrome/*.svg
 /mods/agents-fighters/*.d.ts
+
+!/themes/
+/themes/*
+!/themes/ufc-green.json
