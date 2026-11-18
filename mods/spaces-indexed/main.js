@@ -5,6 +5,7 @@
 
 import { View, div, svg, image } from "gpui-kit";
 import { FIGHTERS, assignFighters } from "./fighters.js";
+import { initCtrlNumbers, showCtrlNumbers } from "./ctrl-numbers.js";
 import { HAS_COUNTRY_WASH, countryWash, flagSettings } from "./country-wash.js";
 import { initSpaceMenu, renderSpaceMenu } from "./space-menus.js";
 import { v_flex, h_flex } from "gpui-base";
@@ -58,6 +59,7 @@ export default class Spaces extends View {
       initSpaceMenu(this, cx, mode);
       return;
     }
+    initCtrlNumbers(this, cx);
     this.git = {}; // where() -> { name, branch, ahead, behind, repo, linked }, null: not a repo
     this.checked = {}; // where() -> when it was last looked at
     this.unsure = new Set(); // where()s git couldn't answer for (a machine away)
@@ -83,6 +85,12 @@ export default class Spaces extends View {
     cx.spawn(async () => {
       for (;;) {
         const command = await nextCommand();
+        const pick = /^top-space-([1-9])$/.exec(command);
+        if (pick) {
+          const target = this.ordered().find(row => row.shortcut === Number(pick[1]));
+          if (target) run("space.select", { id: target.w.id });
+          continue;
+        }
         if (command !== "new-tab") continue;
         const space = spaces().find((s) => s.active);
         openOverlay({
@@ -237,15 +245,22 @@ export default class Spaces extends View {
         this.git[key] = null;
         return;
       }
-      // The repo's own .git folder names it; a worktree's top differs from it.
       const top = r.stdout.replace(/\n$/, ""), repo = common.stdout.replace(/\n$/, "");
+      let linked = repo !== `${top}/.git`;
+      if (linked) {
+        // A submodule or --separate-git-dir checkout also keeps metadata elsewhere.
+        // Only linked worktrees have a private git dir distinct from the common dir.
+        const dir = await exec("git", ["rev-parse", "--absolute-git-dir"], { cwd, on });
+        if (dir.code !== 0) throw new Error(dir.stderr);
+        linked = dir.stdout.replace(/\n$/, "") !== repo;
+      }
       const [branch, counts] = await Promise.all([
         exec("git", ["symbolic-ref", "-q", "HEAD"], { cwd, on }),
         exec("git", ["rev-list", "--left-right", "--count", "HEAD...@{upstream}"], { cwd, on }),
       ]);
       const name = repo.endsWith("/.git") ? base(repo.slice(0, -5)) : base(repo).replace(/\.git$/, "");
       const [ahead, behind] = counts.code === 0 ? counts.stdout.trim().split(/\s+/).map(Number) : [0, 0];
-      const info = { name, branch: branch.code === 0 ? branch.stdout.trim().replace(/^refs\/heads\//, "") : "(detached)", ahead, behind, repo: JSON.stringify([on, repo]), linked: repo !== `${top}/.git` };
+      const info = { name, branch: branch.code === 0 ? branch.stdout.trim().replace(/^refs\/heads\//, "") : "(detached)", ahead, behind, repo: JSON.stringify([on, repo]), linked };
       this.git[key] = info;
       if (!on) this.watch(repo, cx);
     } catch {
@@ -316,7 +331,10 @@ export default class Spaces extends View {
       }
       this.ordering.machines = [...moved];
     }
-    return out.filter(r => this.shown.has(r.w.id));
+    let shortcut = 0;
+    return out.filter(r => this.shown.has(r.w.id)).map(r => ({
+      ...r, shortcut: r.tree ? null : ++shortcut,
+    }));
   }
 
   // The rows, under a header per machine once one isn't this computer.
@@ -409,7 +427,7 @@ export default class Spaces extends View {
       .when(g.behind > 0, (el) => el.child(div().flex_none().text_color(t.ansi1).child(`\u2193${g.behind}`)));
   }
 
-  row({ w, i, g, tree }, t) {
+  row({ w, i, g, tree, shortcut }, t) {
     const on = w.active;
     const fromIndex = this.pressed === null ? -1 : spaces().findIndex(s => s.id === this.pressed);
     const colors = shared("space.colors") ?? {};
@@ -463,8 +481,8 @@ export default class Spaces extends View {
           .relative()
           .gap(5)
           .items_center()
-          // Match spaces() order, the same 1-based order used by ctrl+1..9.
-          .when(i < 9, el => el.child(div().w(14).flex_none().font_family("Arial").font_weight(900).italic().text_size(13).text_color(w.active ? "#F5C542" : "#888F9A").child(String(i + 1))))
+          // Ctrl+1..9 counts only top-level rows, skipping nested worktrees.
+          .when(shortcut !== null && shortcut <= 9 && showCtrlNumbers(this), el => el.child(div().w(14).flex_none().font_family("Arial").font_weight(900).italic().text_size(13).text_color(w.active ? "#F5C542" : "#888F9A").child(String(shortcut))))
           .when(Boolean(tree), el => el.pl(22).child(svg("mods/workspace-chrome/branch.svg").size(13).text_color(t.dim)))
           .child(image(fighter.icon).size(22).flex_none())
           .child(div().flex_shrink(0).max_w(150).truncate().text_color(t.foreground).child(w.name))
@@ -472,7 +490,7 @@ export default class Spaces extends View {
       );
   }
 
-  compact({ w, i }, t) {
+  compact({ w, shortcut }, t) {
     const fighter = FIGHTERS.find(fighter => fighter.id === this.fighterAssignments[w.id]) ?? FIGHTERS[0];
     return railCell(h_flex()
       .id(`space-${w.id}`)
@@ -490,11 +508,12 @@ export default class Spaces extends View {
       .on_click(() => run("space.select", { id: w.id }))
       .child(div().relative().size(24).flex_none()
         .child(image(fighter.icon).size(24))
-        .when(i < 9, el => el.child(div().absolute().left(-1).top(-1).size(11).rounded(6).border_1().border_color(t.chrome).bg(t.selected).items_center().justify_center().text_size(8).font_family("Arial").font_weight(900).italic().text_color(w.active ? "#F5C542" : "#888F9A").child(String(i + 1)))))
+        .when(shortcut !== null && shortcut <= 9 && showCtrlNumbers(this), el => el.child(div().absolute().left(-1).top(-1).size(11).rounded(6).border_1().border_color(t.chrome).bg(t.selected).items_center().justify_center().text_size(8).font_family("Arial").font_weight(900).italic().text_color(w.active ? "#F5C542" : "#888F9A").child(String(shortcut)))))
       .child(div().absolute().right(5).text_color(tone(t, w.status)).child(glyph(w.status))));
   }
 
   close() {
+    this.ctrlNumbersClosed = true;
     this.flagSlider?.release();
   }
 

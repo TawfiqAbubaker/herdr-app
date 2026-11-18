@@ -39,3 +39,6 @@
 !/themes/
 /themes/*
 !/themes/ufc-green.json
+
+!/mods/spaces-indexed/ctrl-numbers.js
+!/mods/spaces-indexed/ctrl-state-macos.c

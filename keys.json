@@ -84,6 +84,15 @@
     "cmd-backspace": "send:\u0015"
   },
   "layout:UFCisco": {
-    "cmd-w": "tabs-indexed.confirm-close"
+    "cmd-w": "tabs-indexed.confirm-close",
+    "ctrl-1": "spaces-indexed.top-space-1",
+    "ctrl-2": "spaces-indexed.top-space-2",
+    "ctrl-3": "spaces-indexed.top-space-3",
+    "ctrl-4": "spaces-indexed.top-space-4",
+    "ctrl-5": "spaces-indexed.top-space-5",
+    "ctrl-6": "spaces-indexed.top-space-6",
+    "ctrl-7": "spaces-indexed.top-space-7",
+    "ctrl-8": "spaces-indexed.top-space-8",
+    "ctrl-9": "spaces-indexed.top-space-9"
   }
 }
