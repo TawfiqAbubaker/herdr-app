@@ -48,4 +48,4 @@ The selected layout, flag enable/opacity preferences, and other saved UI state a
 
 Herdr-generated files, logs, sockets, shipped defaults, and generated type declarations are intentionally ignored. Edit personal mods and layouts, review with `git diff`, then commit and push to share changes.
 
-The custom `ufcgreen` theme is included under `themes/`. DC’s animated GIF/WebP assets are included, but this Herdr build displays their first frame; Carlos’s smoke uses native animation. Right-click Working, Idle, or Agents to hide or show the characters.
+The custom `ufc-green` theme is included under `themes/`. DC’s animated GIF/WebP assets are included, but this Herdr build displays their first frame; Carlos’s smoke uses native animation. Right-click Working, Idle, or Agents to hide or show the characters.

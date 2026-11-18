@@ -15,13 +15,13 @@ export const SMOKE_FRAMES = Array.from({ length: 24 }, (_, i) => {
 });
 
 export function idleScene(t) {
-  const width = 75;
+  const width = 80;
   const height = width / 3;
-  const imageTop = 40 - height - 2; // Slight lift above the Idle label baseline.
+  const imageTop = 40 - height; // Keep his ground aligned with the Idle label.
   // The approved upward-facing sprite's cigarette ember is at 22.3%, 37.4%.
   const emberX = width * 0.223;
   const emberY = imageTop + height * 0.374;
-  return div().id("idle-prates-scene").relative().w(width).h(40).flex_none()
+  return div().id("idle-prates-scene").relative().w(width).h(imageTop + height).flex_none()
     .tooltip("Carlos Prates · taking it easy")
     .child(image("mods/agents-fighters/idle-prates.png").id("idle-prates-art").absolute().left(0).top(imageTop).w(width).h(height))
     .child(div().id("idle-prates-smoke").absolute().left(emberX - 5).top(emberY - 20).w(20).h(20)
