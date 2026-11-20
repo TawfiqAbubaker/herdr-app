@@ -135,7 +135,7 @@ export default class Agents extends View {
   }
 
   characterMenu(t) {
-    const hidden = shared("agents.hidden-characters") ?? {};
+    const hidden = { dc: true, ...(shared("agents.hidden-characters") ?? {}) };
     return v_flex().w_full().p(5).bg(t.popover).text_size(12.8)
       .children([["dc", "DC"], ["carlos", "Carlos"]].map(([key, name]) =>
         div().id(`character-${key}`).h(31).px(8).rounded(7).flex().items_center()
@@ -234,7 +234,7 @@ export default class Agents extends View {
     const t = theme();
     if (props()?.sortMenu) return this.sortMenu(t);
     if (props()?.characterMenu) return this.characterMenu(t);
-    const hiddenCharacters = shared("agents.hidden-characters") ?? {};
+    const hiddenCharacters = { dc: true, ...(shared("agents.hidden-characters") ?? {}) };
     const collapsed = narrow();
     const sort = sortOf();
     let list = agents();

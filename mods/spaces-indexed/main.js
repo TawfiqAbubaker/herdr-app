@@ -5,7 +5,7 @@
 
 import { View, div, svg, image } from "gpui-kit";
 import { FIGHTERS, assignFighters } from "./fighters.js";
-import { initCtrlNumbers, showCtrlNumbers } from "./ctrl-numbers.js";
+import { initCtrlNumbers, syncCtrlNumbers, showCtrlNumbers } from "./ctrl-numbers.js";
 import { HAS_COUNTRY_WASH, countryWash, flagSettings } from "./country-wash.js";
 import { initSpaceMenu, renderSpaceMenu } from "./space-menus.js";
 import { v_flex, h_flex } from "gpui-base";
@@ -107,6 +107,7 @@ export default class Spaces extends View {
   }
 
   checkNew(cx) {
+    syncCtrlNumbers(this, cx);
     const now = Date.now();
     const sp = spaces();
     for (const s of sp) if (!this.shown.has(s.id)) this.born[s.id] ??= now;

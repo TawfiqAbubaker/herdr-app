@@ -1,6 +1,7 @@
 import { div } from "gpui-kit";
 import { h_flex, Switch, SliderState, Slider, SliderTrack, SliderIndicator, SliderThumb } from "gpui-base";
 import { flagSettings, updateFlagSettings } from "./country-wash.js";
+import { hideSpaceNumbers, setHideSpaceNumbers } from "./ctrl-numbers.js";
 
 export function initFlagControls(view) {
   view.flagSlider = SliderState.new({ min: 0, max: 100, step: 1, value: Math.round(flagSettings().opacity * 100) });
@@ -35,4 +36,18 @@ export function flagControls(view, t) {
       .tooltip("Flag opacity · applies to every space")
       .child(slider))
     .child(div().w(30).flex_none().text_right().text_size(11).text_color(t.dim).child(`${percentage}%`));
+}
+
+export function numberControls(t) {
+  const enabled = hideSpaceNumbers();
+  return h_flex().id("fighter-number-controls").h(30).gap(8).flex_none().items_center()
+    .tooltip("Applies to all spaces")
+    .child(Switch.new("fighter-hide-space-numbers").checked(enabled)
+      .accessibility_label("Hide space numbers until Ctrl is held")
+      .w(28).h(16).flex_none().rounded_full().p(2).flex().items_center()
+      .bg(enabled ? t.accent : t.input)
+      .when(enabled, el => el.justify_end()).when(!enabled, el => el.justify_start())
+      .on_change(setHideSpaceNumbers)
+      .child(div().size(12).rounded_full().bg(enabled ? t.accent_foreground : t.foreground)))
+    .child(div().text_size(12).text_color(t.muted).child("Hide numbers until Ctrl is held"));
 }

@@ -2,7 +2,7 @@ import { div, svg, image } from "gpui-kit";
 import { v_flex, h_flex } from "gpui-base";
 import { spaces, panes, props, exec, run, theme, shared, setShared, openOverlay, closeOverlay } from "herdr";
 import { FIGHTERS } from "./fighters.js";
-import { initFlagControls, flagControls } from "./flag-controls.js";
+import { initFlagControls, flagControls, numberControls } from "./flag-controls.js";
 
 function menuItems(view) {
   return [
@@ -114,6 +114,7 @@ export function renderSpaceMenu(view) {
         .on_click(() => closeOverlay(props().overlay))
         .child(svg("mods/workspace-chrome/x.svg").size(14))))
     .child(flagControls(view, t))
+    .child(numberControls(t))
     .child(v_flex().flex_1().min_h(0).gap(6).overflow_y_scrollbar().children(rows))
     .child(div().flex_none().text_size(11).text_color(t.dim).child("Choose a portrait to assign it to this space."));
 }

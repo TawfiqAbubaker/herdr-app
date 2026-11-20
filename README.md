@@ -50,6 +50,6 @@ Herdr-generated files, logs, sockets, shipped defaults, and generated type decla
 
 The custom `ufc-green` theme is included under `themes/`. DC’s animated GIF/WebP assets are included, but this Herdr build displays their first frame; Carlos’s smoke uses native animation. Right-click Working, Idle, or Agents to hide or show the characters.
 
-Sidebar space indices appear only while Ctrl is held (macOS), with no space reserved when hidden. The custom spaces mod includes `ctrl-state-macos.c`, a small modifier-state helper compiled automatically with Apple Command Line Tools on first use. It reads modifier flags only and notifies the sidebar only on state changes. The generated executable is ignored by Git; without a working helper, the indices stay hidden.
+Sidebar space indices are visible by default. Enable “Hide numbers until Ctrl is held” inside Choose fighter to reveal them only while holding Ctrl (macOS), with no space reserved when hidden. This preference applies to every space. The custom spaces mod includes `ctrl-state-macos.c`, a small modifier-state helper compiled automatically with Apple Command Line Tools on first use. It reads modifier flags only and notifies the sidebar only on state changes. The generated executable is ignored by Git; without a working helper, the indices stay hidden.
 
 In UFCisco, Ctrl+1 through Ctrl+9 select top-level spaces only; indented worktree spaces neither display an index nor consume a number.
